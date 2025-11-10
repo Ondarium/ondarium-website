@@ -1,0 +1,99 @@
+:root{
+  --brand1:#7a7cff; /* purple */
+  --brand2:#41e4cf; /* teal */
+  --bg-deep:#0f1217;
+  --bg-dark:#141820;
+  --bg-mid:#1a1f2a;
+  --text:#e9f0ff;
+  --muted:#b9c2d0;
+}
+
+html,body{font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility;height:100%; background:var(--bg-deep); color:var(--text);}
+/* NAVBAR */
+.navbar{background:transparent; transition:background .25s ease;}
+.navbar.scrolled{background:rgba(15,18,23,.8); backdrop-filter:saturate(120%) blur(6px);}
+.navbar-brand{font-weight:800; letter-spacing:.06em; color:#fff;}
+.nav-link{color:#dfe6ff !important; opacity:.9}
+
+/* HERO */
+.page-header{position:relative; overflow:hidden;}
+.page-header-image{position:absolute; inset:0; pointer-events:none;}
+.page-header-image::before{
+  content:""; position:absolute; inset:0;
+  background:
+    radial-gradient(1200px 600px at 10% 20%, rgba(122,124,255,.20), transparent 60%),
+    radial-gradient(1000px 500px at 80% 30%, rgba(65,228,207,.20), transparent 60%),
+    linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 100%);
+  filter: saturate(120%);
+}
+.hero{padding:7rem 0 5rem;}
+.logo-xl{max-width:260px; height:auto;}
+.title{font-weight:900; letter-spacing:.02em; font-size:3rem;}
+.subtitle{font-size:1.25rem; color:var(--muted)}
+.btn-gradient{border:0; color:#0f1217; font-weight:700; padding:.85rem 1.4rem; border-radius:2rem;
+  background:linear-gradient(90deg, var(--brand1), var(--brand2)); box-shadow:0 10px 30px rgba(80,180,200,.25)}
+.btn-gradient:hover{filter:brightness(1.05); color:#0b0e12}
+
+/* SOCIAL */
+.social-icon .list-inline-item a{display:inline-flex; width:48px; height:48px; border-radius:12px; align-items:center; justify-content:center;
+  background:#2a3040; color:#cfe9ff; font-size:1.25rem; transition:transform .15s}
+.social-icon .list-inline-item a:hover{transform:translateY(-2px)}
+
+/* SVG HOOK SECTIONS */
+section.hook{position:relative; padding:4.5rem 0;}
+.hook-top{position:absolute; top:-1px; left:0; width:100%; height:64px;}
+.hook-top path{shape-rendering:geometricPrecision}
+.hook-content{position:relative; z-index:1}
+.section-header{font-weight:800; font-size:2rem;}
+.section-break{height:4px; border-radius:2px; margin:.5rem 0 2rem}
+.bg1{background:var(--bg-mid)}
+.bg2{background:#262a2d}
+.bg3{background:#173436}
+.bgcolor1{background:var(--brand1)}
+.bgcolor2{background:var(--brand2)}
+.color1{color:var(--brand1)}
+.color2{color:var(--brand2)}
+
+/* VIDEO WRAPS */
+.video-background{background:#0e1218; border-radius:.75rem; overflow:hidden; position:relative}
+.video-background video{width:100%; display:block}
+
+/* SUBSCRIBE */
+.subscribe-form .subscribe-email{width:100%; padding:1rem; border:0; border-radius:.65rem; background:#e8eefc; color:#111;}
+.subscribe-form .btn-subscribe{width:100%; padding:1rem; border-radius:.65rem;}
+
+/* PRICING */
+.download-option{border-radius:1rem; padding:1.2rem; text-align:center; color:#0e1218; font-weight:800}
+.download-option.gradient{background:linear-gradient(90deg, var(--brand1), var(--brand2));}
+.download-option.gray{background:#c8cfda}
+.download-name{font-size:1.25rem}
+.download-amount{font-size:1.1rem; opacity:.9}
+.download-included{list-style:none; padding-left:1rem; margin-top:1rem; color:#cdd5e6}
+.download-included li{margin:.35rem 0}
+
+/* FOOTER */
+.footer{padding:3rem 0; text-align:center; color:#b8c2d2}
+.footer .policy-links a{color:#9fb2d1}
+
+/* LOGO ADAPTIVE (SVG uses currentColor) */
+.on-dark{color:#fff;}
+.on-light{color:#111;}
+.logo-svg{height:36px; width:auto; filter: invert(1);}
+
+/* UTIL */
+a{color:#a4ecdd}
+a:hover{color:#b8fff0}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: rgba(20, 24, 32, 0.95); /* fond semi-transparent comme Vital */
+    border-radius: 0 0 12px 12px;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero .col-lg-7 {
+    padding-left: 2rem;
+  }
+}
