@@ -97,3 +97,14 @@ a:hover{color:#b8fff0}
     padding-left: 2rem;
   }
 }
+
+.screenshot-wrapper {
+  max-width: 1100px;   /* largeur max du screenshot */
+  margin: 0 auto;      /* centré dans le container */
+}
+
+.screenshot-wrapper img {
+  width: 100%;         /* prend toute la largeur dispo */
+  border-radius: .75rem;
+  box-shadow: 0 12px 45px rgba(0, 0, 0, .45);
+}
