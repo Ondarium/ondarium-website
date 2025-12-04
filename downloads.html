@@ -142,5 +142,29 @@
     document.addEventListener('scroll', onScroll); onScroll();
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+ 
+  <!-- Download tracking -->
+  <script>
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('a');
+      if (!link) return;
+
+      var url = link.getAttribute('href');
+      if (!url) return;
+
+      if (url.match(/\.(exe|zip|deb|pdf)$/i)) {
+        if (typeof gtag === 'function') {
+          gtag('event', 'download_file', {
+            file_url: url,
+            file_name: url.split('/').pop(),
+            file_extension: url.split('.').pop().toLowerCase(),
+            page_title: document.title,
+            page_location: window.location.href
+          });
+        }
+      }
+    });
+ </script>
+
 </body>
 </html>
