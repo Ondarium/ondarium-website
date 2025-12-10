@@ -130,7 +130,7 @@
           Blackbox Preset Builder is a dedicated tool for the 1010music Blackbox that turns preset creation into a clear, visual, and fast workflow. No more hand-editing preset.xml files: import your samples, fine-tune parameters, audition changes instantly, and save clean presets ready for your projects.
        </p>
        <div class="screenshot-wrapper">
-        <img src="/images/BB_Preset_Editor_screenshot.png"
+        <img src="/images/BB_Preset_Editor_screenshot_v1_3.png"
            alt="Blackbox Preset Builder screenshot"
            class="img-fluid">
        </div>
@@ -142,71 +142,139 @@
   </section>
 
   <!-- HOOK SECTION 2 (dark alt) -->
-  <section class="hook bg2">
-    <svg class="hook-top" viewBox="0 0 15 10" preserveAspectRatio="none"><path fill="#3e4245" d="M0 10 V5 Q2.5 2.5 5 5 t5 0 t5 0 V10"/></svg>
-    <svg class="hook-top" viewBox="5 0 15 10" preserveAspectRatio="none"><path fill="#262a2d" d="M0 10 V5 Q2.5 2.5 5 5 t5 0 t5 0 t5 0 t5 0 V10"/></svg>
-    <div class="container hook-content">
-      <div class="row">
-        <div class="section-header color1 col-12">Key features</div>
-        <div class="section-break bgcolor1 col-lg-5"></div>
-      </div>
-      <!--
-      <div class="row align-items-center mt-3">
-        <div class="col-lg-6 mb-3 mb-lg-0">
-          <div class="video-background">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item"
-                      src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1&controls=0&loop=1&playlist=AMtq5HmbEVs"
-                      title="Demo"
-                      frameborder="0"
-                      allow="autoplay; encrypted-media; picture-in-picture"
-                      allowfullscreen>
-              </iframe>
-            </div>
-          </div>
-         
-
-        </div>
-        <div class="col-lg-6 text-light">
-            <ul>
-                <li>4×4 pad grid: assign a sample per pad, trigger with a click, play via the virtual keyboard or any MIDI controller.</li>
-                <li>Instant waveform: quick peak display with Start/End and Loop Start/End markers, plus loop mode indicator (none/forward/bidirectional).</li>
-                <li>Full pad editing: Gain (dB), pan, pitch (±24 semitones), pad mode (Sample/Clip/Slicer/Granular), reverse, Poly/Mono, Root note and playback options</li>
-                <li>Drag-and-drop everywhere:
-                    From file browser to pad to assign a WAV
-                    Between pads to move or copy a cell and its audio (with shortcuts to prevent accidental drags)
-                </li>
-                <li>Smart preview: Auto-play option when selecting WAVs in the browser.</li>
-                <li>Keyboard/MIDI: play the current pad at any note (with transposition), test mappings instantly with MIDI input.</li>
-                <li>MIDI export: generate .mid files from cell note sequences (format 0 or 1) to document, share, or rework patterns.</li>
-                <li>SD path handling: side-by-side “Editor Path” vs “Blackbox Path,” with automatic resolution of relative/absolute paths for clean SD transfers.</li>
-            </ul>
-        </div>
-      </div>
-      -->
-      <div class="row mt-4">
-            <ul>
-                <li>4×4 pad grid: assign a sample per pad, trigger with a click, play via the virtual keyboard or any MIDI controller.</li>
-                <li>Instant waveform: quick peak display with Start/End and Loop Start/End markers, plus loop mode indicator (none/forward/bidirectional).</li>
-                <li>Full pad editing: Gain (dB), pan, pitch (±24 semitones), pad mode (Sample/Clip/Slicer/Granular), Poly/Mono, root note and playback options.</li>
-                <li>Drag-and-drop everywhere: from file browser to pad to assign a WAV, between pads to move or copy.</li>
-                <li>Smart preview: Auto-play option when selecting WAVs in the browser.</li>
-                <li>Keyboard/MIDI: play the current pad at any note (with transposition), test mappings instantly with MIDI input.</li>
-                <!--<li>MIDI export: generate .mid files from cell note sequences (format 0 or 1) to document, share, or rework patterns.</li>-->
-            </ul>
-        </div>
-       <div class="row mt-4">
-	<div class="col-12 col-md-6 mx-auto text-center text-muted">
-  	  <div class="mb-2 font-weight-bold">Supported Operating Systems</div>
-          Windows · macOS · Linux (Debian/Ubuntu)
-          <br>
-          <span class="small text-muted">Any platform with a Java 8+ runtime</span>
-         <div class="mt-2">64-bit</div>
-        </div>
-      </div>
-      
+<!-- HOOK SECTION 2 (dark alt) -->
+<section class="hook bg2">
+  <svg class="hook-top" viewBox="0 0 15 10" preserveAspectRatio="none"><path fill="#3e4245" d="M0 10 V5 Q2.5 2.5 5 5 t5 0 t5 0 V10"/></svg>
+  <svg class="hook-top" viewBox="5 0 15 10" preserveAspectRatio="none"><path fill="#262a2d" d="M0 10 V5 Q2.5 2.5 5 5 t5 0 t5 0 t5 0 t5 0 V10"/></svg>
+  <div class="container hook-content">
+    <div class="row">
+      <div class="section-header color1 col-12">Key features</div>
+      <div class="section-break bgcolor1 col-lg-5"></div>
     </div>
-  </section>
+
+    <!-- Catégories de fonctionnalités -->
+    <div class="row mt-4">
+      <!-- Sound & Pad Editing -->
+      <div class="col-lg-6 text-light mb-4">
+        <h5 class="mb-2">Sound &amp; Pad Editing</h5>
+        <p class="text-muted small">
+          Everything you need to shape your sounds directly from the editor before they ever hit the Blackbox.
+        </p>
+        <ul>
+          <li>4×4 pad grid: assign a sample per pad, trigger with a click, play via the virtual keyboard or any MIDI controller.</li>
+          <li>
+            Instant waveform view: quick peak display with Start/End and Loop Start/End markers, plus loop mode indicator
+            (none / forward / bidirectional).
+          </li>
+          <li>
+            Move start, end, and loop points directly in the waveform: drag the markers to trim your sample or adjust the loop
+            in real time while you listen.
+          </li>
+          <li>
+            Full pad editing: gain (dB), pan, pitch (±24 semitones), pad mode (Sample / Clip / Slicer / Granular), Poly / Mono,
+            root note and playback options.
+          </li>
+          <li>
+            Keyboard &amp; MIDI input: play the current pad across the keyboard (with transposition) and test mappings instantly
+            with your MIDI controller.
+          </li>
+        </ul>
+        <div class="text-center mt-3">
+          <img src="/images/waveview.png"
+               alt="Waveview"
+               class="img-fluid"
+               style="max-width: 400px; border:1px solid rgba(255,255,255,0.15); border-radius:8px;">
+        </div>
+      </div>
+
+      <!-- Workflow & Navigation -->
+      <div class="col-lg-6 text-light mb-4">
+        <h5 class="mb-2">Workflow &amp; Navigation</h5>
+        <p class="text-muted small">
+          Designed to speed up everyday tasks: browsing, assigning samples, reorganizing pads, and preparing presets for the Blackbox.
+        </p>
+        <ul>
+          <li>Drag-and-drop everywhere: from file browser to pad to assign a WAV, and between pads to move or copy cells.</li>
+          <li>Smart preview: auto-play option when selecting WAVs in the browser for quick sample auditioning.</li>
+          <li>Fast file browsing: optimized cache for smoother navigation and quicker folder switching.</li>
+          <li>
+            Clear pad overview: see at a glance which pads are used, how they’re configured, and which samples they reference.
+          </li>
+        </ul>
+        <div class="text-center mt-3">
+          <img src="/images/file_browser.png"
+               alt="File Browser"
+               class="img-fluid"
+               style="max-width: 400px; border:1px solid rgba(255,255,255,0.15); border-radius:8px;">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Procedural Generator + Export & Sharing -->
+    <div class="row mt-4">
+      <!-- Procedural Generator -->
+      <div class="col-lg-6 text-light mb-4">
+        <h5 class="mb-2">Procedural Generator</h5>
+        <p class="text-muted small">
+          The Procedural Generator gives instant inspiration and lets you reshape, randomize or drop new sounds onto any pad in seconds.
+        </p>
+        <ul>
+          <li>Generate fully-formed sounds: kicks, basses, synth tones, and more.</li>
+          <li>Drag-and-drop directly onto any pad to update it instantly.</li>
+          <li>Tweak parameters to refine or randomize the result as much as you like.</li>
+          <li>Ideal for sound design sessions or rapidly prototyping new Blackbox presets.</li>
+        </ul>
+        <div class="d-flex justify-content-center flex-wrap mt-3">
+          <img src="/images/procedural_generator_controls-types.png"
+               alt="Procedural Generator Controls Types"
+               class="img-fluid mx-2"
+               style="max-height: 265px; border-radius: 6px;">
+          <img src="/images/procedural_generator_controls.png"
+               alt="Procedural Generator Controls"
+               class="img-fluid mx-2"
+               style="max-height: 265px; border-radius: 6px;">
+        </div>
+      </div>
+
+      <!-- Export & Sharing -->
+      <div class="col-lg-6 text-light mb-4">
+        <h5 class="mb-2">Export &amp; Sharing</h5>
+        <p class="text-muted small">
+          Keep your presets portable: move easily between the Blackbox, your DAW, and software samplers.
+        </p>
+        <ul>
+          <li>
+            MIDI export for sequences: generate standard <code>.mid</code> files from your patterns to edit, arrange, or layer them
+            inside any DAW.
+          </li>
+          <li>
+            SFZ export for pads: export your pad rack as a single SFZ file, or export individual pads (including multi-samples)
+            as separate SFZ instruments for use in compatible software samplers.
+          </li>
+        </ul>
+        <div class="text-center mt-3">
+          <img src="/images/export.png"
+               alt="Export"
+               class="img-fluid"
+               style="max-width: 400px; border:1px solid rgba(255,255,255,0.15); border-radius:8px;">
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12 col-md-6 mx-auto text-center text-muted">
+        <div class="mb-2 font-weight-bold">Supported Operating Systems</div>
+        Windows · macOS · Linux (Debian/Ubuntu)
+        <br>
+        <span class="small text-muted">Any platform with a Java 8+ runtime</span>
+        <div class="mt-2">64-bit</div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
 
   <!-- PRICING / CTA -->
   <!--
