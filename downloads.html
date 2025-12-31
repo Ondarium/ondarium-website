@@ -98,37 +98,39 @@
 <h3 class="mb-3">Blackbox Preset Builder</h3>
 
     <!-- Latest version (v1.3) -->
+    <!-- Latest version (v1.4) -->
     <div class="mb-4">
       <a class="btn btn-primary btn-lg btn-block mb-2"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3.exe">
-        💠 Download v1.3 for Windows — Signed Installer (no Java required)
+         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder-1.4.exe">
+        💠 Download v1.4 for Windows — Signed Installer (no Java required)
       </a>
+
       <div class="text-muted small mb-3 pl-3">
         Also available as
-        <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3.0.msi">MSI</a>
+        <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder-1.4.0.msi">MSI</a>
         (alternative Windows installer) and
-        <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3-portable-win.zip">portable ZIP</a>
+        <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder-1.4-portable-win.zip">portable ZIP</a>
         (no installation, just unzip and run) - all digitally signed, no Java required
       </div>
 
       <a class="btn btn-info btn-lg btn-block mb-2"
-        href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3.dmg">
-        🍎 Download v1.3 for macOS — Signed &amp; Notarized .dmg
+         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder-1.4.dmg">
+        🍎 Download v1.4 for macOS — Signed &amp; Notarized .dmg
       </a>
 
       <a class="btn btn-warning btn-lg btn-block mb-2"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/blackbox-preset-builder_1.3-1_all.deb">
-        🐧 Download v1.3 for Debian/Ubuntu — .deb Package (multi-arch)
+         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/blackbox-preset-builder_1.4-1_all.deb">
+        🐧 Download v1.4 for Debian/Ubuntu — .deb Package (multi-arch)
       </a>
 
       <a class="btn btn-success btn-lg btn-block mb-2"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3-universal.zip">
-        🌍 Download v1.3 — Universal ZIP (Windows / macOS / Linux — Java 8+)
+         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder-1.4-universal.zip">
+        🌍 Download v1.4 — Universal ZIP (Windows / macOS / Linux — Java 8+)
       </a>
 
       <a class="btn btn-secondary btn-lg btn-block"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder_Manual-1.0.pdf">
-        📄 User Manual v1.0 — PDF
+         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder_Manual-1.4.pdf">
+        📄 User Manual v1.4 — PDF
       </a>
     </div>
 
@@ -138,41 +140,35 @@
         The universal ZIP works on all platforms but requires Java 8 or later to be installed.
     </p>
 
-    <!-- Release Notes v1.3 -->
+    <!-- Release Notes v1.4 -->
     <div class="p-3 mb-4">
-      <h5 class="mb-2">Release notes for v1.3</h5>
+      <h5 class="mb-2">Release notes for v1.4</h5>
 
       <h6 class="mt-2">New features</h6>
       <ul class="mb-2">
         <li>
-          <strong>Added MIDI export for sequences.</strong><br>
-          Allows you to export your Blackbox patterns as standard MIDI files, so you can edit, arrange, or process them in any DAW or external sequencer.
-        </li>
-
-        <li class="mt-1">
-          <strong>Added SFZ export for pads.</strong><br>
-          Lets you export your pad settings in two ways:<br>
-          - <strong>Pad Rack export</strong> : one SFZ file containing all pads from the rack.<br>
-          - <strong>Individual Pad export</strong> : each pad exported as its own SFZ instrument, with full multi-sample support when applicable.<br>
-          Makes it possible to load your sounds into compatible samplers (e.g., <a href="https://sfzformat.com/software/players/">SFZ players</a>).
-        </li>
-
-        <li class="mt-1">
-          <strong>Added Procedural Generator.</strong><br>
-          Instantly creates fresh ideas for your pads, ideal for inspiration, sound design experiments, or generating entire preset libraries in minutes.
+          <strong>Added Audio Editor.</strong><br>
+          A brand-new Audio Editor lets you edit the audio assigned to the currently selected pad using a non-destructive workflow,
+          with complete Undo / Redo support.<br>
+          Available audio processes include: Normalize, Normalize To, Normalize Each Slice, Silence, Fade In / Fade Out, Gain,
+          DC Offset Removal, Invert Phase, Pitch / Time, and Reverse.
         </li>
       </ul>
 
       <h6 class="mt-3">Improvements</h6>
       <ul class="mb-2">
-        <li>Faster navigation in the file browser, thanks to an optimized file cache that reduces disk reads and speeds up folder switching.</li>
+        <li>UI redesign for improved usability and clearer separation of concerns.</li>
+        <li>
+          <strong>Improved drag &amp; drop behavior for pads.</strong><br>
+          When dropping a file onto a pad, existing pad parameters are preserved by default.<br>
+          Hold <strong>Control</strong> (Windows/Linux) or <strong>Option</strong> (macOS) while dropping to reset the pad to its factory default settings before assigning the new audio.
+        </li>
+        <li>Additional Windows distribution formats: MSI installer and portable ZIP.</li>
       </ul>
 
       <h6 class="mt-3">Bug fixes</h6>
       <ul class="mb-0">
-        <li>Fixed an issue where non-integer pitch values were not previewed correctly.</li>
-        <li>Fixed sample loading for the legacy preset format.</li>
-        <li>Fixed an issue preventing sample deletion while the audio file was in use.</li>
+        <li>Fixed an issue when previewing WAV files containing complex or non-standard chunks.</li>
       </ul>
     </div>
         
@@ -184,6 +180,59 @@
   <h5 class="mb-3">Previous versions</h5>
 
   <ul class="small" style="padding-left: 1.2rem;">
+      <li class="mb-3">
+      <strong>Blackbox Preset Builder v1.3</strong>
+      <ul class="mt-2">
+        <li>
+          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3.exe">
+            Windows — Signed Installer (.exe)
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3.0.msi">
+            Windows — MSI (.msi)
+          </a>
+          /
+          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3-portable-win.zip">
+            Portable ZIP (unzip &amp; run)
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3.dmg">
+            macOS — Signed &amp; Notarized (.dmg)
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/blackbox-preset-builder_1.3-1_all.deb">
+            Debian/Ubuntu — .deb Package (multi-arch)
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3-universal.zip">
+            Universal ZIP (Windows / macOS / Linux — Java 8+)
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder_Manual-1.0.pdf">
+            User Manual v1.0 — PDF
+          </a>
+        </li>
+
+        <li class="mt-2">
+          Release notes for v1.3:
+          <ul class="mt-1">
+            <li>Added MIDI export for sequences.</li>
+            <li>Added SFZ export for pads (pad rack &amp; individual pads, including multi-samples).</li>
+            <li>Added Procedural Generator for rapid sound creation and inspiration.</li>
+            <li>Faster file browser navigation thanks to optimized caching.</li>
+            <li>Fixed non-integer pitch preview issues.</li>
+            <li>Fixed sample loading for legacy preset format.</li>
+            <li>Fixed sample deletion when audio files were still in use.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
     <li class="mb-3">
       <strong>Blackbox Preset Builder v1.1</strong>
       <ul class="mt-2">
