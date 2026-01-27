@@ -211,83 +211,103 @@
     </div>
     
     <div class="row mt-4">
-
-      <!-- Workflow & Navigation -->
-      <div class="col-lg-6 text-light mb-4">
-        <h5 class="mb-2">Workflow &amp; Navigation</h5>
-        <p class="text-muted small">
-          Designed to speed up everyday tasks: browsing, assigning samples, reorganizing pads, and preparing presets for the Blackbox.
-        </p>
-        <ul>
-          <li>Drag-and-drop everywhere: from file browser to pad to assign a WAV, and between pads to move or copy cells.</li>
-          <li>Smart preview: auto-play option when selecting WAVs in the browser for quick sample auditioning.</li>
-          <li>Fast file browsing: optimized cache for smoother navigation and quicker folder switching.</li>
-          <li>
-            Clear pad overview: see at a glance which pads are used, how they’re configured, and which samples they reference.
-          </li>
-        </ul>
-        <div class="text-center mt-3">
-          <img src="/images/file_browser.png"
-               alt="File Browser"
-               class="img-fluid"
-               style="max-width: 400px; border:1px solid rgba(255,255,255,0.15); border-radius:8px;">
+          <!-- Workflow & Navigation -->
+        <div class="col-lg-6 text-light mb-4">
+            <h5 class="mb-2">Workflow &amp; Navigation</h5>
+            <p class="text-muted small">
+              Designed to speed up everyday tasks: browsing, assigning samples, reorganizing pads, and preparing presets for the Blackbox.
+            </p>
+            <ul>
+              <li>Drag-and-drop everywhere: from file browser to pad to assign a WAV, and between pads to move or copy cells.</li>
+              <li>Smart preview: auto-play option when selecting WAVs in the browser for quick sample auditioning.</li>
+              <li>Fast file browsing: optimized cache for smoother navigation and quicker folder switching.</li>
+              <li>
+                Clear pad overview: see at a glance which pads are used, how they’re configured, and which samples they reference.
+              </li>
+            </ul>
+            <div class="text-center mt-3">
+              <img src="/images/file_browser.png"
+                   alt="File Browser"
+                   class="img-fluid"
+                   style="max-width: 400px; border:1px solid rgba(255,255,255,0.15); border-radius:8px;">
+            </div>
         </div>
-      </div>
       
-       <!-- Export & Sharing -->
-      <div class="col-lg-6 text-light mb-4">
-        <h5 class="mb-2">Export &amp; Sharing</h5>
-        <p class="text-muted small">
-          Keep your presets portable: move easily between the Blackbox, your DAW, and software samplers.
-        </p>
-        <ul>
-          <li>
-            MIDI export for sequences: generate standard <code>.mid</code> files from your patterns to edit, arrange, or layer them
-            inside any DAW.
-          </li>
-          <li>
-            SFZ export for pads: export your pad rack as a single SFZ file, or export individual pads (including multi-samples)
-            as separate SFZ instruments for use in compatible software samplers.
-          </li>
-        </ul>
-        <div class="text-center mt-3">
-          <img src="/images/export.png"
-               alt="Export"
-               class="img-fluid"
-               style="max-width: 400px; border:1px solid rgba(255,255,255,0.15); border-radius:8px;">
-        </div>
-      </div>
-      
+         <!-- Multi-samples -->
+        <div class="col-lg-6 text-light mb-4">
+            <h5 class="mb-2">Multi-samples (auto-mapping)</h5>
+            <p class="text-muted small">
+             Drop a folder of WAV files onto a pad and Blackbox Preset Builder auto-maps the instrument for you, generating all the required Blackbox zones.
+            </p>
+            <ul>
+                <li>Reads the root note from WAV metadata when available.</li>
+                <li>Falls back to root note detection from filenames (e.g. Piano-C3.wav, Kick-36.wav).</li>
+                <li>Detects velocity layers when velocity is included in the filename (e.g. Piano-C3-80.wav).</li>
+                <li>Builds proper key ranges and velocity ranges automatically.</li>
+                <li>Uses smart alphabetical auto-mapping when no pitch information is available.</li>
+            </ul>
+             <div class="text-center mt-3">
+              <img src="/images/multi-samples.png"
+                   alt="Multi-samples"
+                   class="img-fluid"
+                   style="max-width: 450px; border:1px solid rgba(255,255,255,0.15); border-radius:8px;">
+            </div>
+        </div>      
     </div>
     
     <!-- Procedural Generator + Export & Sharing -->
     <div class="row mt-4">
-      <!-- Procedural Generator -->
-      <div class="col-lg-6 text-light mb-4">
-        <h5 class="mb-2">Procedural Generator</h5>
-        <p class="text-muted small">
-          The Procedural Generator gives instant inspiration and lets you reshape, randomize or drop new sounds onto any pad in seconds.
-        </p>
-        <ul>
-          <li>Generate fully-formed sounds: kicks, basses, synth tones, and more.</li>
-          <li>Drag-and-drop directly onto any pad to update it instantly.</li>
-          <li>Tweak parameters to refine or randomize the result as much as you like.</li>
-          <li>Ideal for sound design sessions or rapidly prototyping new Blackbox presets.</li>
-        </ul>
-        <div class="d-flex justify-content-center flex-wrap mt-3">
-          <img src="/images/procedural_generator_controls-types.png"
-               alt="Procedural Generator Controls Types"
-               class="img-fluid mx-2"
-               style="max-height: 265px; border-radius: 6px;">
-          <img src="/images/procedural_generator_controls.png"
-               alt="Procedural Generator Controls"
-               class="img-fluid mx-2"
-               style="max-height: 265px; border-radius: 6px;">
-        </div>
-      </div>
-
-     
+          <!-- Procedural Generator -->
+         <div class="col-lg-6 text-light mb-4">
+            <h5 class="mb-2">Procedural Generator</h5>
+            <p class="text-muted small">
+              The Procedural Generator gives instant inspiration and lets you reshape, randomize or drop new sounds onto any pad in seconds.
+            </p>
+            <ul>
+              <li>Generate fully-formed sounds: kicks, basses, synth tones, and more.</li>
+              <li>Drag-and-drop directly onto any pad to update it instantly.</li>
+              <li>Tweak parameters to refine or randomize the result as much as you like.</li>
+              <li>Ideal for sound design sessions or rapidly prototyping new Blackbox presets.</li>
+            </ul>
+            <div class="d-flex justify-content-center flex-wrap mt-3">
+              <img src="/images/procedural_generator_controls-types.png"
+                   alt="Procedural Generator Controls Types"
+                   class="img-fluid mx-2"
+                   style="max-height: 265px; border-radius: 6px;">
+              <img src="/images/procedural_generator_controls.png"
+                   alt="Procedural Generator Controls"
+                   class="img-fluid mx-2"
+                   style="max-height: 265px; border-radius: 6px;">
+            </div>
+         </div>
+         
+          <!-- Export & Sharing -->
+        <div class="col-lg-6 text-light mb-4">
+            <h5 class="mb-2">Export &amp; Sharing</h5>
+            <p class="text-muted small">
+              Keep your presets portable: move easily between the Blackbox, your DAW, and software samplers.
+            </p>
+            <ul>
+              <li>
+                MIDI export for sequences: generate standard .mid files from your patterns to edit, arrange, or layer them
+                inside any DAW.
+              </li>
+              <li>
+                SFZ export for pads: export your pad rack as a single SFZ file, or export individual pads (including multi-samples)
+                as separate SFZ instruments for use in compatible software samplers.
+              </li>
+            </ul>
+            <div class="text-center mt-3">
+              <img src="/images/export.png"
+                   alt="Export"
+                   class="img-fluid"
+                   style="max-width: 400px; border:1px solid rgba(255,255,255,0.15); border-radius:8px;">
+            </div>
+         </div>
+      
     </div>
+    
+    
 
     <div class="row mt-4">
       <div class="col-12 col-md-6 mx-auto text-center text-muted">
