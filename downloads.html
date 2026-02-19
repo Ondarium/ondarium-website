@@ -97,46 +97,46 @@
 
 <h3 class="mb-3">Blackbox Preset Builder</h3>
 
-    <!-- Latest version (v1.5) -->
+    <!-- Latest version (v1.6) -->
     <div class="mb-4">
       <a class="btn btn-primary btn-lg btn-block mb-2"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5.exe">
-        💠 Download v1.5 for Windows — Signed Installer (no Java required)
+         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6.exe">
+        💠 Download v1.6 for Windows — Signed Installer (no Java required)
       </a>
 
       <div class="text-muted small mb-3 pl-3">
         Also available as
-        <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5.0.msi">MSI</a>
+        <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6.0.msi">MSI</a>
         (alternative Windows installer) and
-        <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5-portable-win.zip">portable ZIP</a>
+        <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6-portable-win.zip">portable ZIP</a>
         (no installation, just unzip and run) — all digitally signed, no Java required
       </div>
 
       <!-- macOS Apple Silicon -->
       <a class="btn btn-info btn-lg btn-block mb-2"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5-AppleSilicon.dmg">
-        🍎 Download v1.5 for macOS (Apple Silicon) — Signed &amp; Notarized
+         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6-AppleSilicon.dmg">
+        🍎 Download v1.6 for macOS (Apple Silicon) — Signed &amp; Notarized
       </a>
 
       <!-- macOS Intel -->
       <a class="btn btn-info btn-lg btn-block mb-2"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5-Intel.dmg">
-        🍎 Download v1.5 for macOS (Intel) — Signed &amp; Notarized
+         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6-Intel.dmg">
+        🍎 Download v1.6 for macOS (Intel) — Signed &amp; Notarized
       </a>
 
       <a class="btn btn-warning btn-lg btn-block mb-2"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/blackbox-preset-builder_1.5-1_all.deb">
-        🐧 Download v1.5 for Debian/Ubuntu — .deb Package (multi-arch)
+         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/blackbox-preset-builder_1.6-1_all.deb">
+        🐧 Download v1.6 for Debian/Ubuntu — .deb Package (multi-arch)
       </a>
 
       <a class="btn btn-success btn-lg btn-block mb-2"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5-universal.zip">
-        🌍 Download v1.5 — Universal ZIP (Windows / macOS / Linux — Java 8+)
+         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6-universal.zip">
+        🌍 Download v1.6 — Universal ZIP (Windows / macOS / Linux — Java 8+)
       </a>
 
       <a class="btn btn-secondary btn-lg btn-block"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder_Manual-1.4.pdf">
-        📄 User Manual v1.4 — PDF
+         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder_Manual-1.6.pdf">
+        📄 User Manual v1.6 — PDF
       </a>
     </div>
 
@@ -146,36 +146,51 @@
         The universal ZIP works on all platforms but requires Java 8 or later to be installed.
     </p>
 
-    <!-- Release Notes v1.5 -->
+     <!-- Release Notes v1.6 -->
     <div class="p-3 mb-4">
-      <h5 class="mb-2">Release notes for v1.5</h5>
+      <h5 class="mb-2">Release notes for v1.6</h5>
 
       <h6 class="mt-2">New features</h6>
       <ul class="mb-2">
         <li>
-          <strong>Expanded Audio Editor effects</strong><br>
-          The Audio Editor now includes additional creative FX: Compressor, Bit Crush, Distort, Tape Stop, Flanger, Chorus, and Phaser.
+          <strong>Filter and ADSR envelope</strong>
         </li>
         <li class="mt-1">
-          <strong>Pads Mode for Keyboard</strong><br>
-          A new Pads mode allows pads to be triggered directly via MIDI notes, making it easier to play, test, and audition pad layouts from the virtual keyboard or an external MIDI controller.
+          <strong>Delay and Reverb Sends + Master FX tab</strong><br>
+          <span class="text-muted small">
+            Note: These sound engine additions are designed to provide a realistic preview of how your preset will behave on the Blackbox hardware,
+            though they are not exact one-to-one reproductions.
+          </span>
         </li>
         <li class="mt-1">
-          <strong>Extended Procedural Generator sound types</strong><br>
-          The Procedural Generator now includes new sound categories: Clap, Tom, Rim, and FX.
+          <strong>Sequencer tab</strong><br>
+          A full step-based sequencer has been added with copy/paste and undo/redo support.
+        </li>
+        <li class="mt-1">
+          <strong>DawProject export</strong><br>
+          Export projects directly to DawProject format for faster import in Bitwig, Cubase, and Studio One.<br>
+          Sforzando tracks are created automatically (SFZ files must currently be assigned manually).
+        </li>
+        <li class="mt-1">
+          <strong>Bitbox compatibility (community reported)</strong><br>
+          Some users have reported that the application works with the 1010music Bitbox.
+          While Bitbox is not officially supported, Demo Mode has been updated to allow users to test compatibility.
         </li>
       </ul>
 
       <h6 class="mt-3">Improvements</h6>
       <ul class="mb-2">
-        <li><strong>New pad parameters</strong>: per-pad MIDI In channel and Pad Note.</li>
-        <li><strong>Persistent FX parameter state</strong>: the Audio Editor now remembers the last-used parameters for each audio process.</li>
-        <li>Improved waveform editing precision.</li>
+        <li>Improved waveform rendering at high zoom ratios.</li>
+        <li>Improved rotary controller precision.</li>
+        <li>
+          <strong>SFZ export now includes</strong>: ADSR envelope, filter parameters, and control section support.
+        </li>
       </ul>
 
       <h6 class="mt-3">Bug fixes</h6>
       <ul class="mb-0">
-        <li>Fixed a velocity range edge case when loading presets with multi-sample pads.</li>
+        <li>Fixed unintended auto-play when tree selection changes programmatically.</li>
+        <li>Fixed multi-sample audio replacement not updating playback correctly.</li>
       </ul>
     </div>
         
@@ -187,6 +202,62 @@
   <h5 class="mb-3">Previous versions</h5>
 
   <ul class="small" style="padding-left: 1.2rem;">
+    <li class="mb-3">
+          <strong>Blackbox Preset Builder v1.5</strong>
+          <ul class="mt-2">
+            <li>
+              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5.exe">
+                Windows — Signed Installer (.exe)
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5.0.msi">
+                Windows — MSI (.msi)
+              </a>
+              /
+              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5-portable-win.zip">
+                Portable ZIP (unzip &amp; run)
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5-AppleSilicon.dmg">
+                macOS (Apple Silicon) — Signed &amp; Notarized (.dmg)
+              </a>
+              /
+              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5-Intel.dmg">
+                macOS (Intel) — Signed &amp; Notarized (.dmg)
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/blackbox-preset-builder_1.5-1_all.deb">
+                Debian/Ubuntu — .deb Package (multi-arch)
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5-universal.zip">
+                Universal ZIP (Windows / macOS / Linux — Java 8+)
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder_Manual-1.4.pdf">
+                User Manual v1.4 — PDF
+              </a>
+            </li>
+
+            <li class="mt-2">
+              Release notes for v1.5:
+              <ul class="mt-1">
+                <li>Expanded Audio Editor effects (Bit Crush, Distort, Tape Stop, Flanger, Chorus, Phaser).</li>
+                <li>Pads Mode for Keyboard (trigger pads directly via MIDI notes).</li>
+                <li>Extended Procedural Generator sound types: Clap, Tom, Rim, and FX.</li>
+                <li>New per-pad parameters: MIDI In channel and Pad Note.</li>
+                <li>Persistent FX parameter state in the Audio Editor.</li>
+                <li>Improved waveform editing precision.</li>
+                <li>Fixed a velocity range edge case when loading presets with multi-sample pads.</li>
+              </ul>
+            </li>
+          </ul>
+    </li>
     <li class="mb-3">
       <strong>Blackbox Preset Builder v1.4</strong>
       <ul class="mt-2">
