@@ -194,7 +194,7 @@
             Edit the audio assigned to the currently selected pad using a fully non-destructive workflow, with complete Undo / Redo support.
           </p>
           <ul>
-            <li>Apply common processes instantly: Normalize, Silence, Fade In / Fade Out, Gain, Reverse, DC Offset Removal, and more.</li>
+            <li>Apply common processes instantly: Normalize, Silence, Fade In / Fade Out, Gain, Reverse, DC Offset Removal, Pitch / Time, and more.</li>
             <li><strong>Normalize Each Slice</strong> helps keep slice-based kits consistent.</li>
             <li><strong>Pitch / Time</strong> lets you adjust tuning or timing while keeping your workflow fast and reversible.</li>
             <li>All edits are tracked and can be reverted at any time via Undo / Redo.</li>
@@ -207,80 +207,97 @@
                  style="max-width: 400px; border:1px solid rgba(255,255,255,0.15); border-radius:8px;">
           </div>
         </div>
-    
     </div>
     
     <div class="row mt-4">
-          <!-- Workflow & Navigation -->
+        <!-- Sequencer -->
         <div class="col-lg-6 text-light mb-4">
-            <h5 class="mb-2">Workflow &amp; Navigation</h5>
-            <p class="text-muted small">
-              Designed to speed up everyday tasks: browsing, assigning samples, reorganizing pads, and preparing presets for the Blackbox.
-            </p>
-            <ul>
-              <li>Drag-and-drop everywhere: from file browser to pad to assign a WAV, and between pads to move or copy cells.</li>
-              <li>Smart preview: auto-play option when selecting WAVs in the browser for quick sample auditioning.</li>
-              <li>Fast file browsing: optimized cache for smoother navigation and quicker folder switching.</li>
-              <li>
-                Clear pad overview: see at a glance which pads are used, how they’re configured, and which samples they reference.
-              </li>
-            </ul>
-            <div class="text-center mt-3">
-              <img src="/images/file_browser.png"
-                   alt="File Browser"
-                   class="img-fluid"
-                   style="max-width: 400px; border:1px solid rgba(255,255,255,0.15); border-radius:8px;">
-            </div>
+          <h5 class="mb-2">Sequencer</h5>
+          <p class="text-muted small">
+            Build and refine patterns directly inside the editor, without switching to another tool.
+          </p>
+          <ul>
+            <li>Full step-based sequencer with copy / paste, duplicate, undo / redo, note selection, and note transposition tools.</li>
+            <li><strong>Live MIDI recording</strong> for capturing ideas directly from your keyboard or controller.</li>
+            <li><strong>MIDI import</strong>: import MIDI files into the sequencer, choose the source track, and use options to simplify drum kit imports.</li>
+          </ul>
+          <div class="d-flex justify-content-center flex-wrap mt-3">
+            <img src="/images/note_editor.png"
+                 alt="Note editor"
+                 class="img-fluid mx-2"
+                 style="max-height: 265px; border-radius: 6px;">
+          </div>
         </div>
-      
-         <!-- Multi-samples -->
+
+        <!-- Workflow & Navigation -->
         <div class="col-lg-6 text-light mb-4">
-            <h5 class="mb-2">Multi-samples (auto-mapping)</h5>
-            <p class="text-muted small">
-             Drop a folder of WAV files onto a pad and Blackbox Preset Builder auto-maps the instrument for you, generating all the required Blackbox zones.
-            </p>
-            <ul>
-                <li>Reads the root note from WAV metadata when available.</li>
-                <li>Falls back to root note detection from filenames (e.g. Piano-C3.wav, Kick-36.wav).</li>
-                <li>Detects velocity layers when velocity is included in the filename (e.g. Piano-C3-80.wav).</li>
-                <li>Builds proper key ranges and velocity ranges automatically.</li>
-                <li>Uses smart alphabetical auto-mapping when no pitch information is available.</li>
-            </ul>
-             <div class="text-center mt-3">
-              <img src="/images/multi-samples.png"
-                   alt="Multi-samples"
-                   class="img-fluid"
-                   style="max-width: 450px; border:1px solid rgba(255,255,255,0.15); border-radius:8px;">
-            </div>
-        </div>      
+          <h5 class="mb-2">Workflow &amp; Navigation</h5>
+          <p class="text-muted small">
+            Designed to speed up everyday tasks: browsing, assigning samples, reorganizing pads, and preparing presets for the Blackbox.
+          </p>
+          <ul>
+            <li>Drag-and-drop everywhere: from file browser to pad to assign WAV files, and between pads to move or copy cells.</li>
+            <li>Smart preview: optional auto-play when selecting WAV files in the browser for faster auditioning.</li>
+            <li>Fast file browsing with optimized cache for smoother navigation and quicker folder switching.</li>
+            <li>Clear pad overview: see at a glance which pads are used, how they are configured, and which samples they reference.</li>
+          </ul>
+          <div class="text-center mt-3">
+            <img src="/images/file_browser.png"
+                 alt="File Browser"
+                 class="img-fluid"
+                 style="max-width: 400px; border:1px solid rgba(255,255,255,0.15); border-radius:8px;">
+          </div>
+        </div>
+      </div>
+    
+    <div class="row mt-4">
+    <!-- Multi-samples -->
+        <div class="col-lg-6 text-light mb-4">
+          <h5 class="mb-2">Multi-samples (auto-mapping)</h5>
+          <p class="text-muted small">
+            Drop a folder of WAV files onto a pad and Blackbox Preset Builder automatically maps the instrument for you, generating the required Blackbox zones.
+          </p>
+          <ul>
+            <li>Reads the root note from WAV metadata when available.</li>
+            <li>Falls back to root note detection from filenames (for example: Piano-C3.wav, Kick-36.wav).</li>
+            <li>Detects velocity layers when velocity is included in the filename.</li>
+            <li>Builds proper key ranges and velocity ranges automatically.</li>
+            <li>Uses smart alphabetical auto-mapping when no pitch information is available.</li>
+          </ul>
+          <div class="text-center mt-3">
+            <img src="/images/multi-samples.png"
+                 alt="Multi-samples"
+                 class="img-fluid"
+                 style="max-width: 450px; border:1px solid rgba(255,255,255,0.15); border-radius:8px;">
+          </div>
+        </div>
+
+        <!-- Sound Generator -->
+        <div class="col-lg-6 text-light mb-4">
+          <h5 class="mb-2">Sound Generator</h5>
+          <p class="text-muted small">
+            The Sound Generator gives instant inspiration and lets you create, reshape, randomize, or drag new sounds onto any pad in seconds.
+          </p>
+          <ul>
+            <li>Generate fully formed sounds and variations directly inside the editor.</li>
+            <li>Drag and drop the result onto any pad for immediate use.</li>
+            <li>Ideal for sound design sessions, sketching, and quickly building new Blackbox kits.</li>
+          </ul>
+          <div class="d-flex justify-content-center flex-wrap mt-3">
+            <img src="/images/procedural_generator_controls-types.png"
+                 alt="Procedural Generator Controls Types"
+                 class="img-fluid mx-2"
+                 style="max-height: 265px; border-radius: 6px;">
+            <img src="/images/procedural_generator_controls.png"
+                 alt="Procedural Generator Controls"
+                 class="img-fluid mx-2"
+                 style="max-height: 265px; border-radius: 6px;">
+          </div>
+        </div>
     </div>
     
     <!-- Procedural Generator + Export & Sharing -->
     <div class="row mt-4">
-          <!-- Procedural Generator -->
-         <div class="col-lg-6 text-light mb-4">
-            <h5 class="mb-2">Procedural Generator</h5>
-            <p class="text-muted small">
-              The Procedural Generator gives instant inspiration and lets you reshape, randomize or drop new sounds onto any pad in seconds.
-            </p>
-            <ul>
-              <li>Generate fully-formed sounds: kicks, basses, synth tones, and more.</li>
-              <li>Drag-and-drop directly onto any pad to update it instantly.</li>
-              <li>Tweak parameters to refine or randomize the result as much as you like.</li>
-              <li>Ideal for sound design sessions or rapidly prototyping new Blackbox presets.</li>
-            </ul>
-            <div class="d-flex justify-content-center flex-wrap mt-3">
-              <img src="/images/procedural_generator_controls-types.png"
-                   alt="Procedural Generator Controls Types"
-                   class="img-fluid mx-2"
-                   style="max-height: 265px; border-radius: 6px;">
-              <img src="/images/procedural_generator_controls.png"
-                   alt="Procedural Generator Controls"
-                   class="img-fluid mx-2"
-                   style="max-height: 265px; border-radius: 6px;">
-            </div>
-         </div>
-         
           <!-- Export & Sharing -->
         <div class="col-lg-6 text-light mb-4">
             <h5 class="mb-2">Export &amp; Sharing</h5>
@@ -304,11 +321,8 @@
                    style="max-width: 400px; border:1px solid rgba(255,255,255,0.15); border-radius:8px;">
             </div>
          </div>
-      
     </div>
     
-    
-
     <div class="row mt-4">
       <div class="col-12 col-md-6 mx-auto text-center text-muted">
         <div class="mb-2 font-weight-bold">Supported Operating Systems</div>
