@@ -99,44 +99,44 @@
 <section id="bento-project-studio" class="mb-5">
   <h3 class="mb-3">Bento Project Studio</h3>
 
-  <!-- Latest version (v1.0) -->
+    <!-- Latest version (v1.1) -->
   <div class="mb-4">
     <a class="btn btn-primary btn-lg btn-block mb-2"
-       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0.exe">
-      💠 Download v1.0 for Windows — Signed Installer (no Java required)
+       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1.exe">
+      💠 Download v1.1 for Windows — Signed Installer (no Java required)
     </a>
 
     <div class="text-muted small mb-3 pl-3">
       Also available as
-      <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0.0.msi">MSI</a>
+      <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1.0.msi">MSI</a>
       (alternative Windows installer) and
-      <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0-portable-win.zip">portable ZIP</a>
+      <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1-portable-win.zip">portable ZIP</a>
       (no installation, just unzip and run) — all digitally signed, no Java required
     </div>
 
     <a class="btn btn-info btn-lg btn-block mb-2"
-       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0-AppleSilicon.dmg">
-      🍎 Download v1.0 for macOS (Apple Silicon) — Signed &amp; Notarized
+       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1-AppleSilicon.dmg">
+      🍎 Download v1.1 for macOS (Apple Silicon) — Signed &amp; Notarized
     </a>
 
     <a class="btn btn-info btn-lg btn-block mb-2"
-       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0-Intel.dmg">
-      🍎 Download v1.0 for macOS (Intel) — Signed &amp; Notarized
+       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1-Intel.dmg">
+      🍎 Download v1.1 for macOS (Intel) — Signed &amp; Notarized
     </a>
 
     <a class="btn btn-warning btn-lg btn-block mb-2"
-       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/bento-project-studio_1.0-1_all.deb">
-      🐧 Download v1.0 for Debian/Ubuntu — .deb Package (multi-arch)
+       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/bento-project-studio_1.1-1_all.deb">
+      🐧 Download v1.1 for Debian/Ubuntu — .deb Package (multi-arch)
     </a>
 
     <a class="btn btn-success btn-lg btn-block mb-2"
-       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0-universal.zip">
-      🌍 Download v1.0 — Universal ZIP (Windows / macOS / Linux — Java 8+)
+       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1-universal.zip">
+      🌍 Download v1.1 — Universal ZIP (Windows / macOS / Linux — Java 8+)
     </a>
 
     <a class="btn btn-secondary btn-lg btn-block"
-       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio_Manual-1.0.pdf">
-      📄 User Manual v1.0 — PDF
+       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio_Manual-1.1.pdf">
+      📄 User Manual v1.1 — PDF
     </a>
   </div>
 
@@ -146,20 +146,106 @@
     The universal ZIP works on all platforms but requires Java 8 or later to be installed.
   </p>
 
-  <!-- Release Notes v1.0 -->
+  <!-- Release Notes v1.1 -->
   <div class="p-3 mb-4">
-    <h5 class="mb-2">Release notes for v1.0</h5>
+    <h5 class="mb-2">Release notes for v1.1</h5>
 
-    <h6 class="mt-2">Initial release</h6>
+    <p class="text-muted mb-3">
+      Bento Project Studio v1.1 is a feature and maintenance update focused on audio editing,
+      drag-and-drop workflows, new track types, effects, scenes, and overall usability.
+    </p>
+
+    <h6 class="mt-2">New features</h6>
+    <ul class="mb-2">
+      <li>
+        Added per-zone Audio Editor support for multisample zones, with undo/redo,
+        so individual samples can be trimmed, processed and fine-tuned directly from the Zone Map.
+      </li>
+      <li>Added Overdrive FX support, including editing and playback.</li>
+      <li>Added Scene support for capturing and recalling sequence states.</li>
+      <li>Added Shredder track support, including editing and playback.</li>
+    </ul>
+
+    <h6 class="mt-3">Improvements</h6>
+    <ul class="mb-2">
+      <li>
+        Improved reverb playback preview, designed to give a more realistic impression of how
+        projects will sound on the Bento hardware, although it is not an exact one-to-one reproduction.
+      </li>
+      <li>Improved sample workflow consistency between generated samples, browser samples and external files.</li>
+      <li>Improved velocity-to-gain behavior.</li>
+    </ul>
+
+    <h6 class="mt-3">Bug fixes</h6>
     <ul class="mb-0">
-      <li>Visual editor for 1010music Bento projects.</li>
-      <li>Create new projects or open existing projects directly from your SD Card Root.</li>
-      <li>Track Slot workflow for sample, multisample, slicer, loop, granular, wavetable, external and master tracks.</li>
-      <li>Sample assignment, patch browsing, project preview and Bento-compatible project saving.</li>
-      <li>Zone Map for multisample editing.</li>
-      <li>Sequencer with track-based sequence management and note editing.</li>
-      <li>Audio Editor and Sound Generator integration.</li>
-      <li>MIDI, SFZ and DAWproject export workflows.</li>
+      <li>Fixed drag-and-drop of samples generated by the Sound Generator.</li>
+      <li>Fixed drag-and-drop support from the system file browser.</li>
+    </ul>
+  </div>
+  
+    <!-- Previous versions -->
+  <div class="mb-5">
+    <h5 class="mb-3">Previous versions</h5>
+
+    <ul class="small" style="padding-left: 1.2rem;">
+      <li class="mb-3">
+        <strong>Bento Project Studio v1.0</strong>
+        <ul class="mt-2">
+          <li>
+            <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0.exe">
+              Windows — Signed Installer (.exe)
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0.0.msi">
+              Windows — MSI (.msi)
+            </a>
+            /
+            <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0-portable-win.zip">
+              Portable ZIP (unzip &amp; run)
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0-AppleSilicon.dmg">
+              macOS (Apple Silicon) — Signed &amp; Notarized (.dmg)
+            </a>
+            /
+            <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0-Intel.dmg">
+              macOS (Intel) — Signed &amp; Notarized (.dmg)
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/bento-project-studio_1.0-1_all.deb">
+              Debian/Ubuntu — .deb Package (multi-arch)
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0-universal.zip">
+              Universal ZIP (Windows / macOS / Linux — Java 8+)
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio_Manual-1.0.pdf">
+              User Manual v1.0 — PDF
+            </a>
+          </li>
+
+          <li class="mt-2">
+            Release notes for v1.0:
+            <ul class="mt-1">
+              <li>Initial release of Bento Project Studio.</li>
+              <li>Visual editor for 1010music Bento projects.</li>
+              <li>Create new projects or open existing projects directly from your SD Card Root.</li>
+              <li>Track Slot workflow for sample, multisample, slicer, loop, granular, wavetable, external and master tracks.</li>
+              <li>Sample assignment, patch browsing, project preview and Bento-compatible project saving.</li>
+              <li>Zone Map for multisample editing.</li>
+              <li>Sequencer with track-based sequence management and note editing.</li>
+              <li>Audio Editor and Sound Generator integration.</li>
+              <li>MIDI, SFZ and DAWproject export workflows.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
     </ul>
   </div>
 </section>
