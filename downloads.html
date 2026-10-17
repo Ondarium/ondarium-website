@@ -1,786 +1,699 @@
 <!doctype html>
 <html lang="en">
 <head>
-
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QVJT9XZ2C"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-0QVJT9XZ2C');
   </script>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Downloads — Ondarium</title>
-  <meta name="description" content="Available downloads for Ondarium software." />
+  <meta name="description" content="Available downloads for Ondarium software.">
+  <meta name="theme-color" content="#0b0e14">
+  <link rel="canonical" href="https://www.ondarium.com/downloads.html">
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  
-  <!-- Webfont Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="/css/custom.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ondarium">
+  <meta property="og:title" content="Downloads — Ondarium">
+  <meta property="og:description" content="Available downloads for Ondarium software.">
+  <meta property="og:url" content="https://www.ondarium.com/downloads.html">
+  <meta property="og:image" content="https://www.ondarium.com/images/Bento_Project_Studio_screenshot.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css">
 
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="icon" href="/images/favicon.ico">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" sizes="180x180">
 </head>
 <body>
-  <!-- NAV -->
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header id="mainNav" class="nav">
     <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand on-dark" href="/#top">
-        <img class="logo-svg" src="/images/ondarium-mark.svg" alt="Ondarium">
-      </a>
-
-      <!-- Burger -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu"
-        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Menu items -->
-      <div id="navMenu" class="collapse navbar-collapse justify-content-end text-right">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="/products.html">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://store.ondarium.com">Buy</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://forum.ondarium.com">Forum</a></li>
-          <li class="nav-item"><a class="nav-link" href="/downloads.html">Downloads</a></li>
-          <li class="nav-item"><a class="nav-link" href="/support.html">Support</a></li>
-        </ul>
-      </div>
+      <a class="brand" href="/" aria-label="Ondarium — home"><img src="/images/ondarium-logo-white.svg" alt="Ondarium" width="96" height="26"></a>
+      <button id="navToggle" class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+      <nav aria-label="Main">
+      <ul id="navLinks" class="nav-links">
+        <li><a href="/products.html">Products</a></li>
+        <li><a href="https://forum.ondarium.com">Forum</a></li>
+        <li><a href="/downloads.html" aria-current="page">Downloads</a></li>
+        <li><a href="/support.html">Support</a></li>
+        <li><a class="nav-cta" href="https://store.ondarium.com">Buy</a></li>
+      </ul>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <!-- MAIN CONTENT -->
-  <main class="container" style="padding-top:100px; padding-bottom:60px;">
-    <h1 class="mb-4 text-center">Downloads  /  free trials</h1>
-    
-    <p class="text-center mb-5 text-muted">
-    All applications run in trial-mode until activated with a license key.
-    </p>
-
-<!--    
-<h3>Blackbox Preset Builder</h3>
-<ul>
-  <li>
-    <strong>Windows Installer (.exe)</strong><br>
-    <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.0/BlackboxPresetBuilder-1.0.exe">
-      Download v1.0 — Signed installer (no Java required)
-    </a>
-  </li>
-
-  <li class="mt-2">
-    <strong>Universal ZIP (Windows, macOS, Linux)</strong><br>
-    <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.0/BlackboxPresetBuilder-1.0-universal.zip">
-      Download v1.0 — Java 8+ required
-    </a>
-  </li>
-  <li class="mt-2">
-    <strong>Manual</strong><br>
-    <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.0/BlackboxPresetBuilder_Manual-1.0.pdf">
-      Download v1.0 — PDF
-    </a>
-  </li>
-</ul>
-
-<p class="text-muted" style="font-size: 0.9rem;">
-  The Windows installer includes an embedded Java runtime and is digitally signed.<br>
-  The universal ZIP works on all platforms but requires a Java 8+ installation.
-</p>
--->
-
-<!-- Bento Project Studio -->
-<section id="bento-project-studio" class="mb-5">
-  <h3 class="mb-3">Bento Project Studio</h3>
-
-    <!-- Latest version (v1.1) -->
-  <div class="mb-4">
-    <a class="btn btn-primary btn-lg btn-block mb-2"
-       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1.exe">
-      💠 Download v1.1 for Windows — Signed Installer (no Java required)
-    </a>
-
-    <div class="text-muted small mb-3 pl-3">
-      Also available as
-      <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1.0.msi">MSI</a>
-      (alternative Windows installer),
-      <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1-portable-win.zip">portable ZIP</a>
-      (no installation, just unzip and run), and
-      <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1-Windows7.zip">Windows 7 portable ZIP</a>
-      (legacy package, no installation, just unzip and run) — no Java required
+  <main id="main">
+  <section class="hero hero-compact">
+    <div class="container">
+      <h1>Downloads</h1>
+      <p class="lead">All applications run in trial-mode until activated with a license key.</p>
     </div>
+  </section>
 
-    <a class="btn btn-info btn-lg btn-block mb-2"
-       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1-AppleSilicon.dmg">
-      🍎 Download v1.1 for macOS (Apple Silicon) — Signed &amp; Notarized
-    </a>
-
-    <a class="btn btn-info btn-lg btn-block mb-2"
-       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1-Intel.dmg">
-      🍎 Download v1.1 for macOS (Intel) — Signed &amp; Notarized
-    </a>
-
-    <a class="btn btn-warning btn-lg btn-block mb-2"
-       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/bento-project-studio_1.1-1_all.deb">
-      🐧 Download v1.1 for Debian/Ubuntu — .deb Package (multi-arch)
-    </a>
-
-    <a class="btn btn-success btn-lg btn-block mb-2"
-       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1-universal.zip">
-      🌍 Download v1.1 — Universal ZIP (Windows / macOS / Linux — Java 8+)
-    </a>
-
-    <a class="btn btn-secondary btn-lg btn-block"
-       href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio_Manual-1.1.pdf">
-      📄 User Manual v1.1 — PDF
-    </a>
-  </div>
-
-  <p class="text-muted" style="font-size: 0.9rem;">
-    The Windows and macOS installers include an embedded private Java runtime and are digitally signed.<br>
-    The macOS version is fully notarized by Apple, with no Gatekeeper warnings on first launch.<br>
-    The universal ZIP works on all platforms but requires Java 8 or later to be installed.
-  </p>
-
-  <!-- Release Notes v1.1 -->
-  <div class="p-3 mb-4">
-    <h5 class="mb-2">Release notes for v1.1</h5>
-
-    <p class="text-muted mb-3">
+  <section class="section" style="padding-top:40px">
+    <div class="container">
+      <section class="dl-product" id="bento-project-studio">
+        <div class="dl-head">
+          <h2>Bento Project Studio</h2>
+          <span class="version">Latest · v1.1</span>
+        </div>
+        <div class="dl-grid">
+          <a class="dl-card" href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1.exe">
+            <span class="dl-os"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10.5 4.5v7H3zM11.5 4.4 21 3v8.5h-9.5zM3 12.5h7.5v7L3 18.5zM11.5 12.5H21V21l-9.5-1.4z"/></svg>Windows</span>
+            <span class="dl-meta">Signed installer · no Java required · v1.1</span>
+          </a>
+          <a class="dl-card" href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1-AppleSilicon.dmg">
+            <span class="dl-os"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4.5" width="16" height="11" rx="1.6"/><path d="M2.5 19.5h19"/></svg>macOS — Apple Silicon</span>
+            <span class="dl-meta">Signed &amp; notarized (.dmg) · v1.1</span>
+          </a>
+          <a class="dl-card" href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1-Intel.dmg">
+            <span class="dl-os"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4.5" width="16" height="11" rx="1.6"/><path d="M2.5 19.5h19"/></svg>macOS — Intel</span>
+            <span class="dl-meta">Signed &amp; notarized (.dmg) · v1.1</span>
+          </a>
+          <a class="dl-card" href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/bento-project-studio_1.1-1_all.deb">
+            <span class="dl-os"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2"/><path d="m7.5 9.5 3 2.5-3 2.5M13 15h4"/></svg>Debian / Ubuntu</span>
+            <span class="dl-meta">.deb package · multi-arch · v1.1</span>
+          </a>
+          <a class="dl-card" href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1-universal.zip">
+            <span class="dl-os"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.500 5.700 12 3Z"/></svg>Universal ZIP</span>
+            <span class="dl-meta">Windows / macOS / Linux · Java 8+ · v1.1</span>
+          </a>
+          <a class="dl-card" href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio_Manual-1.1.pdf">
+            <span class="dl-os"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>User Manual</span>
+            <span class="dl-meta">PDF · v1.1</span>
+          </a>
+        </div>
+        <p class="dl-more">Also available as <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1.0.msi">MSI</a> (alternative Windows installer), <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1-portable-win.zip">portable ZIP</a> (no installation, just unzip and run), and <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.1/BentoProjectStudio-1.1-Windows7.zip">Windows 7 portable ZIP</a> (legacy package, no installation, just unzip and run) — no Java required</p>
+        <div class="note"><p>The Windows and macOS installers include an embedded private Java runtime and are digitally signed.</p><p>
+    The macOS version is fully notarized by Apple, with no Gatekeeper warnings on first launch.</p><p>
+    The universal ZIP works on all platforms but requires Java 8 or later to be installed.</p></div>
+        <details class="notes">
+          <summary>Release notes for v1.1</summary>
+          <div class="inner"><p>
       Bento Project Studio v1.1 is a feature and maintenance update focused on audio editing,
       drag-and-drop workflows, new track types, effects, scenes, and overall usability.
     </p>
-
-    <h6 class="mt-2">New features</h6>
-    <ul class="mb-2">
-      <li>
+<h6>New features</h6>
+<ul>
+<li>
         Added per-zone Audio Editor support for multisample zones, with undo/redo,
         so individual samples can be trimmed, processed and fine-tuned directly from the Zone Map.
       </li>
-      <li>Added Overdrive FX support, including editing and playback.</li>
-      <li>Added Scene support for capturing and recalling sequence states.</li>
-      <li>Added Shredder track support, including editing and playback.</li>
-    </ul>
-
-    <h6 class="mt-3">Improvements</h6>
-    <ul class="mb-2">
-      <li>
+<li>Added Overdrive FX support, including editing and playback.</li>
+<li>Added Scene support for capturing and recalling sequence states.</li>
+<li>Added Shredder track support, including editing and playback.</li>
+</ul>
+<h6>Improvements</h6>
+<ul>
+<li>
         Improved reverb playback preview, designed to give a more realistic impression of how
         projects will sound on the Bento hardware, although it is not an exact one-to-one reproduction.
       </li>
-      <li>Improved sample workflow consistency between generated samples, browser samples and external files.</li>
-      <li>Improved velocity-to-gain behavior.</li>
-    </ul>
-
-    <h6 class="mt-3">Bug fixes</h6>
-    <ul class="mb-0">
-      <li>Fixed drag-and-drop of samples generated by the Sound Generator.</li>
-      <li>Fixed drag-and-drop support from the system file browser.</li>
-    </ul>
-  </div>
-  
-    <!-- Previous versions -->
-  <div class="mb-5">
-    <h5 class="mb-3">Previous versions</h5>
-
-    <ul class="small" style="padding-left: 1.2rem;">
-      <li class="mb-3">
-        <strong>Bento Project Studio v1.0</strong>
-        <ul class="mt-2">
-          <li>
-            <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0.exe">
+<li>Improved sample workflow consistency between generated samples, browser samples and external files.</li>
+<li>Improved velocity-to-gain behavior.</li>
+</ul>
+<h6>Bug fixes</h6>
+<ul>
+<li>Fixed drag-and-drop of samples generated by the Sound Generator.</li>
+<li>Fixed drag-and-drop support from the system file browser.</li>
+</ul></div>
+        </details>
+        <details class="notes">
+          <summary>Previous versions</summary>
+          <div class="inner"><ul>
+<li>
+<strong>Bento Project Studio v1.0</strong>
+<ul>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0.exe">
               Windows — Signed Installer (.exe)
             </a>
-          </li>
-          <li>
-            <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0.0.msi">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0.0.msi">
               Windows — MSI (.msi)
             </a>
             /
             <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0-portable-win.zip">
               Portable ZIP (unzip &amp; run)
             </a>
-          </li>
-          <li>
-            <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0-AppleSilicon.dmg">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0-AppleSilicon.dmg">
               macOS (Apple Silicon) — Signed &amp; Notarized (.dmg)
             </a>
             /
             <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0-Intel.dmg">
               macOS (Intel) — Signed &amp; Notarized (.dmg)
             </a>
-          </li>
-          <li>
-            <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/bento-project-studio_1.0-1_all.deb">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/bento-project-studio_1.0-1_all.deb">
               Debian/Ubuntu — .deb Package (multi-arch)
             </a>
-          </li>
-          <li>
-            <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0-universal.zip">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio-1.0-universal.zip">
               Universal ZIP (Windows / macOS / Linux — Java 8+)
             </a>
-          </li>
-          <li>
-            <a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio_Manual-1.0.pdf">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/btps-1.0/BentoProjectStudio_Manual-1.0.pdf">
               User Manual v1.0 — PDF
             </a>
-          </li>
-
-          <li class="mt-2">
+</li>
+<li>
             Release notes for v1.0:
-            <ul class="mt-1">
-              <li>Initial release of Bento Project Studio.</li>
-              <li>Visual editor for 1010music Bento projects.</li>
-              <li>Create new projects or open existing projects directly from your SD Card Root.</li>
-              <li>Track Slot workflow for sample, multisample, slicer, loop, granular, wavetable, external and master tracks.</li>
-              <li>Sample assignment, patch browsing, project preview and Bento-compatible project saving.</li>
-              <li>Zone Map for multisample editing.</li>
-              <li>Sequencer with track-based sequence management and note editing.</li>
-              <li>Audio Editor and Sound Generator integration.</li>
-              <li>MIDI, SFZ and DAWproject export workflows.</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<hr style="border-top: 1px solid rgba(255,255,255,0.2); margin: 2.5rem 0;">
-
-<!-- Blackbox Preset Builder -->
-<section id="blackbox-preset-builder" class="mb-5">
-  <h3 class="mb-3">Blackbox Preset Builder</h3>
-
-    <!-- Latest version (v1.8) -->
-    <div class="mb-4">
-      <a class="btn btn-primary btn-lg btn-block mb-2"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/BlackboxPresetBuilder-1.8.exe">
-        💠 Download v1.8 for Windows — Signed Installer (no Java required)
-      </a>
-
-      <div class="text-muted small mb-3 pl-3">
-        Also available as
-        <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/BlackboxPresetBuilder-1.8.0.msi">MSI</a>
-        (alternative Windows installer) and
-        <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/BlackboxPresetBuilder-1.8-portable-win.zip">portable ZIP</a>
-        (no installation, just unzip and run) — all digitally signed, no Java required
-      </div>
-
-      <!-- macOS Apple Silicon -->
-      <a class="btn btn-info btn-lg btn-block mb-2"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/BlackboxPresetBuilder-1.8-AppleSilicon.dmg">
-        🍎 Download v1.8 for macOS (Apple Silicon) — Signed &amp; Notarized
-      </a>
-
-      <!-- macOS Intel -->
-      <a class="btn btn-info btn-lg btn-block mb-2"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/BlackboxPresetBuilder-1.8-Intel.dmg">
-        🍎 Download v1.8 for macOS (Intel) — Signed &amp; Notarized
-      </a>
-
-      <a class="btn btn-warning btn-lg btn-block mb-2"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/blackbox-preset-builder_1.8-1_all.deb">
-        🐧 Download v1.8 for Debian/Ubuntu — .deb Package (multi-arch)
-      </a>
-
-      <a class="btn btn-success btn-lg btn-block mb-2"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/BlackboxPresetBuilder-1.8-universal.zip">
-        🌍 Download v1.8 — Universal ZIP (Windows / macOS / Linux — Java 8+)
-      </a>
-
-      <a class="btn btn-secondary btn-lg btn-block"
-         href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/BlackboxPresetBuilder_Manual-1.8.pdf">
-        📄 User Manual v1.8 — PDF
-      </a>
-    </div>
-
-    <p class="text-muted" style="font-size: 0.9rem;">
-        The Windows and macOS installers include an embedded private Java runtime and are digitally signed.<br>
-        The macOS version is fully notarized by Apple, with no Gatekeeper warnings on first launch.<br>
-        The universal ZIP works on all platforms but requires Java 8 or later to be installed.
-    </p>
-
-    <!-- Release Notes v1.8 -->
-    <div class="p-3 mb-4">
-      <h5 class="mb-2">Release notes for v1.8</h5>
-
-      <h6 class="mt-2">New features</h6>
-      <ul class="mb-2">
-        <li>
-          <strong>Sequencer</strong>
-          <ul class="mt-1">
-            <li><strong>MIDI Out for sequences</strong>: sequences can now send MIDI output.</li>
-            <li><strong>Note labels</strong>: notes can now display labels in the sequencer.</li>
-            <li><strong>Note probability</strong></li>
-          </ul>
+            <ul>
+<li>Initial release of Bento Project Studio.</li>
+<li>Visual editor for 1010music Bento projects.</li>
+<li>Create new projects or open existing projects directly from your SD Card Root.</li>
+<li>Track Slot workflow for sample, multisample, slicer, loop, granular, wavetable, external and master tracks.</li>
+<li>Sample assignment, patch browsing, project preview and Bento-compatible project saving.</li>
+<li>Zone Map for multisample editing.</li>
+<li>Sequencer with track-based sequence management and note editing.</li>
+<li>Audio Editor and Sound Generator integration.</li>
+<li>MIDI, SFZ and DAWproject export workflows.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div>
+        </details>
+      </section>
+      <section class="dl-product" id="blackbox-preset-builder">
+        <div class="dl-head">
+          <h2>Blackbox Preset Builder</h2>
+          <span class="version">Latest · v1.8</span>
+        </div>
+        <div class="dl-grid">
+          <a class="dl-card" href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/BlackboxPresetBuilder-1.8.exe">
+            <span class="dl-os"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10.5 4.5v7H3zM11.5 4.4 21 3v8.5h-9.5zM3 12.5h7.5v7L3 18.5zM11.5 12.5H21V21l-9.5-1.4z"/></svg>Windows</span>
+            <span class="dl-meta">Signed installer · no Java required · v1.8</span>
+          </a>
+          <a class="dl-card" href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/BlackboxPresetBuilder-1.8-AppleSilicon.dmg">
+            <span class="dl-os"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4.5" width="16" height="11" rx="1.6"/><path d="M2.5 19.5h19"/></svg>macOS — Apple Silicon</span>
+            <span class="dl-meta">Signed &amp; notarized (.dmg) · v1.8</span>
+          </a>
+          <a class="dl-card" href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/BlackboxPresetBuilder-1.8-Intel.dmg">
+            <span class="dl-os"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4.5" width="16" height="11" rx="1.6"/><path d="M2.5 19.5h19"/></svg>macOS — Intel</span>
+            <span class="dl-meta">Signed &amp; notarized (.dmg) · v1.8</span>
+          </a>
+          <a class="dl-card" href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/blackbox-preset-builder_1.8-1_all.deb">
+            <span class="dl-os"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2"/><path d="m7.5 9.5 3 2.5-3 2.5M13 15h4"/></svg>Debian / Ubuntu</span>
+            <span class="dl-meta">.deb package · multi-arch · v1.8</span>
+          </a>
+          <a class="dl-card" href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/BlackboxPresetBuilder-1.8-universal.zip">
+            <span class="dl-os"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.500 5.700 12 3Z"/></svg>Universal ZIP</span>
+            <span class="dl-meta">Windows / macOS / Linux · Java 8+ · v1.8</span>
+          </a>
+          <a class="dl-card" href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/BlackboxPresetBuilder_Manual-1.8.pdf">
+            <span class="dl-os"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>User Manual</span>
+            <span class="dl-meta">PDF · v1.8</span>
+          </a>
+        </div>
+        <p class="dl-more">Also available as <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/BlackboxPresetBuilder-1.8.0.msi">MSI</a> (alternative Windows installer) and <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.8/BlackboxPresetBuilder-1.8-portable-win.zip">portable ZIP</a> (no installation, just unzip and run) — all digitally signed, no Java required</p>
+        <div class="note"><p>The Windows and macOS installers include an embedded private Java runtime and are digitally signed.</p><p>
+        The macOS version is fully notarized by Apple, with no Gatekeeper warnings on first launch.</p><p>
+        The universal ZIP works on all platforms but requires Java 8 or later to be installed.</p></div>
+        <details class="notes">
+          <summary>Release notes for v1.8</summary>
+          <div class="inner"><h6>New features</h6>
+<ul>
+<li>
+<strong>Sequencer</strong>
+<ul>
+<li><strong>MIDI Out for sequences</strong>: sequences can now send MIDI output.</li>
+<li><strong>Note labels</strong>: notes can now display labels in the sequencer.</li>
+<li><strong>Note probability</strong></li>
+</ul>
+</li>
+<li>
+<strong>New sound generators</strong>
+<ul>
+<li>Glitch</li>
+<li>Noise Texture</li>
+<li>FX: Riser, Downlifter, Impact, Sweep, Blast</li>
+</ul>
+</li>
+<li>
+<strong>Audio Editor</strong>
+<ul>
+<li>New effect: <strong>Transient Shaper</strong></li>
+<li><strong>Trim</strong></li>
+<li><strong>Loop crossfade editing</strong></li>
+<li><strong>Loop Finder</strong>: find smoother loop points.</li>
+</ul>
+</li>
+<li>
+<strong>Recorder</strong>: record from a hardware device or from an internal source (resampling).
         </li>
-        <li class="mt-1">
-          <strong>New sound generators</strong>
-          <ul class="mt-1">
-            <li>Glitch</li>
-            <li>Noise Texture</li>
-            <li>FX: Riser, Downlifter, Impact, Sweep, Blast</li>
-          </ul>
+<li>
+<strong>Preview volume controls</strong>
+</li>
+<li>
+<strong>Playback</strong>: bidirectional loops, reverse playback, loop crossfade.
         </li>
-        <li class="mt-1">
-          <strong>Audio Editor</strong>
-          <ul class="mt-1">
-            <li>New effect: <strong>Transient Shaper</strong></li>
-            <li><strong>Trim</strong></li>
-            <li><strong>Loop crossfade editing</strong></li>
-            <li><strong>Loop Finder</strong>: find smoother loop points.</li>
-          </ul>
-        </li>
-        <li class="mt-1">
-          <strong>Recorder</strong>: record from a hardware device or from an internal source (resampling).
-        </li>
-        <li class="mt-1">
-          <strong>Preview volume controls</strong>
-        </li>
-        <li class="mt-1">
-          <strong>Playback</strong>: bidirectional loops, reverse playback, loop crossfade.
-        </li>
-      </ul>
-
-      <h6 class="mt-3">Improvements</h6>
-      <ul class="mb-2">
-        <li>Improved time-stretching audio quality.</li>
-        <li>Real-time changes for level, pitch, filter, and send effects.</li>
-        <li>Improved sound generators with more control parameters: <strong>Wavetable</strong>, <strong>Drums</strong>, and <strong>FX</strong>.</li>
-        <li>Notes can now be colored based on velocity or probability.</li>
-        <li>
+</ul>
+<h6>Improvements</h6>
+<ul>
+<li>Improved time-stretching audio quality.</li>
+<li>Real-time changes for level, pitch, filter, and send effects.</li>
+<li>Improved sound generators with more control parameters: <strong>Wavetable</strong>, <strong>Drums</strong>, and <strong>FX</strong>.</li>
+<li>Notes can now be colored based on velocity or probability.</li>
+<li>
           Export
-          <ul class="mt-1">
-            <li>Use the pad number in track and file names.</li>
-            <li>DAWproject: patterns A/B/C/D are now clips in the same track.</li>
-          </ul>
-        </li>
-      </ul>
-
-      <h6 class="mt-3">Changes</h6>
-      <ul class="mb-2">
-        <li><strong>Sound Generator</strong>
-          <ul class="mt-1">
-            <li><strong>Pluck</strong> is now renamed <strong>Physical</strong>.</li>
-            <li><strong>Fractal</strong> is replaced by <strong>Glitch</strong>.</li>
-          </ul>
-        </li>
-      </ul>
-
-      <h6 class="mt-3">Bug fixes</h6>
-      <ul class="mb-0">
-        <li>Fixed <strong>Save As</strong> behavior when a sample was edited but not already saved.</li>
-        <li>Fixed missing polyphony parameter in <strong>Clip Mode</strong>.</li>
-      </ul>
-    </div>
-        
-    <hr style="border-top: 1px solid rgba(255,255,255,0.2); margin: 2.5rem 0;">
-
-    
-    <!-- Previous versions (no big buttons) -->
-    <div class="mb-5">
-  <h5 class="mb-3">Previous versions</h5>
-
-  <ul class="small" style="padding-left: 1.2rem;">
-    <li class="mb-3">
-          <strong>Blackbox Preset Builder v1.7</strong>
-          <ul class="mt-2">
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.7/BlackboxPresetBuilder-1.7.exe">
+          <ul>
+<li>Use the pad number in track and file names.</li>
+<li>DAWproject: patterns A/B/C/D are now clips in the same track.</li>
+</ul>
+</li>
+</ul>
+<h6>Changes</h6>
+<ul>
+<li><strong>Sound Generator</strong>
+<ul>
+<li><strong>Pluck</strong> is now renamed <strong>Physical</strong>.</li>
+<li><strong>Fractal</strong> is replaced by <strong>Glitch</strong>.</li>
+</ul>
+</li>
+</ul>
+<h6>Bug fixes</h6>
+<ul>
+<li>Fixed <strong>Save As</strong> behavior when a sample was edited but not already saved.</li>
+<li>Fixed missing polyphony parameter in <strong>Clip Mode</strong>.</li>
+</ul></div>
+        </details>
+        <details class="notes">
+          <summary>Previous versions</summary>
+          <div class="inner"><ul>
+<li>
+<strong>Blackbox Preset Builder v1.7</strong>
+<ul>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.7/BlackboxPresetBuilder-1.7.exe">
                 Windows — Signed Installer (.exe)
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.7/BlackboxPresetBuilder-1.7.0.msi">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.7/BlackboxPresetBuilder-1.7.0.msi">
                 Windows — MSI (.msi)
               </a>
               /
               <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.7/BlackboxPresetBuilder-1.7-portable-win.zip">
                 Portable ZIP (unzip &amp; run)
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.7/BlackboxPresetBuilder-1.7-AppleSilicon.dmg">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.7/BlackboxPresetBuilder-1.7-AppleSilicon.dmg">
                 macOS (Apple Silicon) — Signed &amp; Notarized (.dmg)
               </a>
               /
               <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.7/BlackboxPresetBuilder-1.7-Intel.dmg">
                 macOS (Intel) — Signed &amp; Notarized (.dmg)
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.7/blackbox-preset-builder_1.7-1_all.deb">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.7/blackbox-preset-builder_1.7-1_all.deb">
                 Debian/Ubuntu — .deb Package (multi-arch)
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.7/BlackboxPresetBuilder-1.7-universal.zip">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.7/BlackboxPresetBuilder-1.7-universal.zip">
                 Universal ZIP (Windows / macOS / Linux — Java 8+)
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.7/BlackboxPresetBuilder_Manual-1.7.pdf">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.7/BlackboxPresetBuilder_Manual-1.7.pdf">
                 User Manual v1.7 — PDF
               </a>
-            </li>
-
-            <li class="mt-2">
+</li>
+<li>
               Release notes for v1.7:
-              <ul class="mt-1">
-                <li><strong>Sequencer</strong>: live MIDI recording, MIDI import, note preview while editing, playhead, and double-click the step ruler to start playback from a specific position.</li>
-                <li><strong>New sound generators</strong>: VA Subtractive, FM (2 operators), SuperPad, Wavetable.</li>
-                <li><strong>New Audio Editor effects</strong>: Vocoder, Stutter.</li>
-                <li><strong>Slice Loop</strong>.</li>
-                <li><strong>Clip Mode with Time-Stretch</strong>.</li>
-                <li><strong>Bulk loop point import</strong>: loop points can now be automatically imported when loading WAV files.</li>
-                <li><strong>Velocity modulation</strong>: pad gain can now be modulated by velocity.</li>
-                <li><strong>Velocity Slider</strong>: a dedicated Velocity Slider next to the Virtual Keyboard lets you adjust the trigger velocity used when previewing pads or playing from the keyboard.</li>
-                <li>Optimized sound engine (reduced CPU usage).</li>
-                <li>Improved choke handling.</li>
-                <li>Multi-sample filename parsing now supports the 3-number format: RootNote_VelocityLow_VelocityHigh. Example: WoodenClick_OB_79_90_127.wav.</li>
-                <li>Improved WAV metadata extraction (root note).</li>
-                <li>In the sequence editor, <strong>Left / Right arrow keys now select notes</strong>.</li>
-                <li>Use <strong>Ctrl + Left / Right</strong> to nudge notes horizontally.</li>
-                <li>Fixed sample loading issues when multiple multi-samples are used across several pads.</li>
-                <li>Fixed preview voice not stopping correctly.</li>
-                <li>Fixed undo history being cleared when changing patterns.</li>
-              </ul>
-            </li>
-          </ul>
-    </li>
-    <li class="mb-3">
-          <strong>Blackbox Preset Builder v1.6</strong>
-          <ul class="mt-2">
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6.exe">
+              <ul>
+<li><strong>Sequencer</strong>: live MIDI recording, MIDI import, note preview while editing, playhead, and double-click the step ruler to start playback from a specific position.</li>
+<li><strong>New sound generators</strong>: VA Subtractive, FM (2 operators), SuperPad, Wavetable.</li>
+<li><strong>New Audio Editor effects</strong>: Vocoder, Stutter.</li>
+<li><strong>Slice Loop</strong>.</li>
+<li><strong>Clip Mode with Time-Stretch</strong>.</li>
+<li><strong>Bulk loop point import</strong>: loop points can now be automatically imported when loading WAV files.</li>
+<li><strong>Velocity modulation</strong>: pad gain can now be modulated by velocity.</li>
+<li><strong>Velocity Slider</strong>: a dedicated Velocity Slider next to the Virtual Keyboard lets you adjust the trigger velocity used when previewing pads or playing from the keyboard.</li>
+<li>Optimized sound engine (reduced CPU usage).</li>
+<li>Improved choke handling.</li>
+<li>Multi-sample filename parsing now supports the 3-number format: RootNote_VelocityLow_VelocityHigh. Example: WoodenClick_OB_79_90_127.wav.</li>
+<li>Improved WAV metadata extraction (root note).</li>
+<li>In the sequence editor, <strong>Left / Right arrow keys now select notes</strong>.</li>
+<li>Use <strong>Ctrl + Left / Right</strong> to nudge notes horizontally.</li>
+<li>Fixed sample loading issues when multiple multi-samples are used across several pads.</li>
+<li>Fixed preview voice not stopping correctly.</li>
+<li>Fixed undo history being cleared when changing patterns.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Blackbox Preset Builder v1.6</strong>
+<ul>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6.exe">
                 Windows — Signed Installer (.exe)
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6.0.msi">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6.0.msi">
                 Windows — MSI (.msi)
               </a>
               /
               <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6-portable-win.zip">
                 Portable ZIP (unzip &amp; run)
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6-AppleSilicon.dmg">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6-AppleSilicon.dmg">
                 macOS (Apple Silicon) — Signed &amp; Notarized (.dmg)
               </a>
               /
               <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6-Intel.dmg">
                 macOS (Intel) — Signed &amp; Notarized (.dmg)
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/blackbox-preset-builder_1.6-1_all.deb">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/blackbox-preset-builder_1.6-1_all.deb">
                 Debian/Ubuntu — .deb Package (multi-arch)
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6-universal.zip">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder-1.6-universal.zip">
                 Universal ZIP (Windows / macOS / Linux — Java 8+)
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder_Manual-1.6.pdf">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.6/BlackboxPresetBuilder_Manual-1.6.pdf">
                 User Manual v1.6 — PDF
               </a>
-            </li>
-
-            <li class="mt-2">
+</li>
+<li>
               Release notes for v1.6:
-              <ul class="mt-1">
-                <li>Added Filter and ADSR envelope.</li>
-                <li>Added Delay and Reverb Sends + Master FX tab.</li>
-                <li>Added a full step-based Sequencer tab with copy/paste and undo/redo support.</li>
-                <li>Added DawProject export for Bitwig, Cubase, and Studio One workflows.</li>
-                <li>Updated Demo Mode to make community testing with 1010music Bitbox easier.</li>
-                <li>Improved waveform rendering at high zoom ratios.</li>
-                <li>Improved rotary controller precision.</li>
-                <li>SFZ export now includes ADSR envelope, filter parameters, and control section support.</li>
-                <li>Fixed unintended auto-play when the file tree selection is changed programmatically.</li>
-                <li>Fixed multi-sample audio replacement not updating playback correctly.</li>
-              </ul>
-            </li>
-          </ul>
-    </li>
-    <li class="mb-3">
-          <strong>Blackbox Preset Builder v1.5</strong>
-          <ul class="mt-2">
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5.exe">
+              <ul>
+<li>Added Filter and ADSR envelope.</li>
+<li>Added Delay and Reverb Sends + Master FX tab.</li>
+<li>Added a full step-based Sequencer tab with copy/paste and undo/redo support.</li>
+<li>Added DawProject export for Bitwig, Cubase, and Studio One workflows.</li>
+<li>Updated Demo Mode to make community testing with 1010music Bitbox easier.</li>
+<li>Improved waveform rendering at high zoom ratios.</li>
+<li>Improved rotary controller precision.</li>
+<li>SFZ export now includes ADSR envelope, filter parameters, and control section support.</li>
+<li>Fixed unintended auto-play when the file tree selection is changed programmatically.</li>
+<li>Fixed multi-sample audio replacement not updating playback correctly.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Blackbox Preset Builder v1.5</strong>
+<ul>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5.exe">
                 Windows — Signed Installer (.exe)
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5.0.msi">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5.0.msi">
                 Windows — MSI (.msi)
               </a>
               /
               <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5-portable-win.zip">
                 Portable ZIP (unzip &amp; run)
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5-AppleSilicon.dmg">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5-AppleSilicon.dmg">
                 macOS (Apple Silicon) — Signed &amp; Notarized (.dmg)
               </a>
               /
               <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5-Intel.dmg">
                 macOS (Intel) — Signed &amp; Notarized (.dmg)
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/blackbox-preset-builder_1.5-1_all.deb">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/blackbox-preset-builder_1.5-1_all.deb">
                 Debian/Ubuntu — .deb Package (multi-arch)
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5-universal.zip">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder-1.5-universal.zip">
                 Universal ZIP (Windows / macOS / Linux — Java 8+)
               </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder_Manual-1.4.pdf">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.5/BlackboxPresetBuilder_Manual-1.4.pdf">
                 User Manual v1.4 — PDF
               </a>
-            </li>
-
-            <li class="mt-2">
+</li>
+<li>
               Release notes for v1.5:
-              <ul class="mt-1">
-                <li>Expanded Audio Editor effects (Bit Crush, Distort, Tape Stop, Flanger, Chorus, Phaser).</li>
-                <li>Pads Mode for Keyboard (trigger pads directly via MIDI notes).</li>
-                <li>Extended Procedural Generator sound types: Clap, Tom, Rim, and FX.</li>
-                <li>New per-pad parameters: MIDI In channel and Pad Note.</li>
-                <li>Persistent FX parameter state in the Audio Editor.</li>
-                <li>Improved waveform editing precision.</li>
-                <li>Fixed a velocity range edge case when loading presets with multi-sample pads.</li>
-              </ul>
-            </li>
-          </ul>
-    </li>
-    <li class="mb-3">
-      <strong>Blackbox Preset Builder v1.4</strong>
-      <ul class="mt-2">
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder-1.4.exe">
+              <ul>
+<li>Expanded Audio Editor effects (Bit Crush, Distort, Tape Stop, Flanger, Chorus, Phaser).</li>
+<li>Pads Mode for Keyboard (trigger pads directly via MIDI notes).</li>
+<li>Extended Procedural Generator sound types: Clap, Tom, Rim, and FX.</li>
+<li>New per-pad parameters: MIDI In channel and Pad Note.</li>
+<li>Persistent FX parameter state in the Audio Editor.</li>
+<li>Improved waveform editing precision.</li>
+<li>Fixed a velocity range edge case when loading presets with multi-sample pads.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Blackbox Preset Builder v1.4</strong>
+<ul>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder-1.4.exe">
             Windows — Signed Installer (.exe)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder-1.4.0.msi">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder-1.4.0.msi">
             Windows — MSI (.msi)
           </a>
           /
           <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder-1.4-portable-win.zip">
             Portable ZIP (unzip &amp; run)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder-1.4-AppleSilicon.dmg">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder-1.4-AppleSilicon.dmg">
             macOS (Apple Silicon) — Signed &amp; Notarized (.dmg)
           </a>
           /
           <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder-1.4-Intel.dmg">
             macOS (Intel) — Signed &amp; Notarized (.dmg)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/blackbox-preset-builder_1.4-1_all.deb">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/blackbox-preset-builder_1.4-1_all.deb">
             Debian/Ubuntu — .deb Package (multi-arch)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder-1.4-universal.zip">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder-1.4-universal.zip">
             Universal ZIP (Windows / macOS / Linux — Java 8+)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder_Manual-1.4.pdf">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.4/BlackboxPresetBuilder_Manual-1.4.pdf">
             User Manual v1.4 — PDF
           </a>
-        </li>
-
-        <li class="mt-2">
+</li>
+<li>
           Release notes for v1.4:
-          <ul class="mt-1">
-            <li>Added Audio Editor (non-destructive workflow with full Undo / Redo). Available audio processes include: Normalize, Normalize To, Normalize Each Slice, Silence, Fade In / Fade Out, Gain, DC Offset Removal, Invert Phase, Pitch / Time, and Reverse.</li>
-            <li>UI redesign for improved usability and clearer separation of concerns.</li>
-            <li>Improved drag &amp; drop: hold Control (Windows/Linux) or Option (macOS) to reset pad to defaults before assigning.</li>
-            <li>Additional Windows distribution formats: MSI installer and portable ZIP.</li>
-            <li>Fixed preview issues for WAV files containing complex or non-standard chunks.</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-
-    <li class="mb-3">
-      <strong>Blackbox Preset Builder v1.3</strong>
-      <ul class="mt-2">
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3.exe">
+          <ul>
+<li>Added Audio Editor (non-destructive workflow with full Undo / Redo). Available audio processes include: Normalize, Normalize To, Normalize Each Slice, Silence, Fade In / Fade Out, Gain, DC Offset Removal, Invert Phase, Pitch / Time, and Reverse.</li>
+<li>UI redesign for improved usability and clearer separation of concerns.</li>
+<li>Improved drag &amp; drop: hold Control (Windows/Linux) or Option (macOS) to reset pad to defaults before assigning.</li>
+<li>Additional Windows distribution formats: MSI installer and portable ZIP.</li>
+<li>Fixed preview issues for WAV files containing complex or non-standard chunks.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Blackbox Preset Builder v1.3</strong>
+<ul>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3.exe">
             Windows — Signed Installer (.exe)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3.0.msi">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3.0.msi">
             Windows — MSI (.msi)
           </a>
           /
           <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3-portable-win.zip">
             Portable ZIP (unzip &amp; run)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3.dmg">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3.dmg">
             macOS — Signed &amp; Notarized (.dmg)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/blackbox-preset-builder_1.3-1_all.deb">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/blackbox-preset-builder_1.3-1_all.deb">
             Debian/Ubuntu — .deb Package (multi-arch)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3-universal.zip">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder-1.3-universal.zip">
             Universal ZIP (Windows / macOS / Linux — Java 8+)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder_Manual-1.0.pdf">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.3/BlackboxPresetBuilder_Manual-1.0.pdf">
             User Manual v1.0 — PDF
           </a>
-        </li>
-
-        <li class="mt-2">
+</li>
+<li>
           Release notes for v1.3:
-          <ul class="mt-1">
-            <li>Added MIDI export for sequences.</li>
-            <li>Added SFZ export for pads (pad rack &amp; individual pads, including multi-samples).</li>
-            <li>Added Procedural Generator for rapid sound creation and inspiration.</li>
-            <li>Faster file browser navigation thanks to optimized caching.</li>
-            <li>Fixed non-integer pitch preview issues.</li>
-            <li>Fixed sample loading for legacy preset format.</li>
-            <li>Fixed sample deletion when audio files were still in use.</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-
-    <li class="mb-3">
-      <strong>Blackbox Preset Builder v1.1</strong>
-      <ul class="mt-2">
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.1/BlackboxPresetBuilder-1.1.exe">
+          <ul>
+<li>Added MIDI export for sequences.</li>
+<li>Added SFZ export for pads (pad rack &amp; individual pads, including multi-samples).</li>
+<li>Added Procedural Generator for rapid sound creation and inspiration.</li>
+<li>Faster file browser navigation thanks to optimized caching.</li>
+<li>Fixed non-integer pitch preview issues.</li>
+<li>Fixed sample loading for legacy preset format.</li>
+<li>Fixed sample deletion when audio files were still in use.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Blackbox Preset Builder v1.1</strong>
+<ul>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.1/BlackboxPresetBuilder-1.1.exe">
             Windows — Signed Installer (.exe)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.1/blackbox-preset-builder_1.1-1_all.deb">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.1/blackbox-preset-builder_1.1-1_all.deb">
             Debian/Ubuntu — .deb Package (multi-arch)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.1/BlackboxPresetBuilder-1.1-universal.zip">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.1/BlackboxPresetBuilder-1.1-universal.zip">
             Universal ZIP (Windows / macOS / Linux — Java 8+)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.1/BlackboxPresetBuilder_Manual-1.0.pdf">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.1/BlackboxPresetBuilder_Manual-1.0.pdf">
             User Manual v1.0 — PDF
           </a>
-        </li>
-        <li>
+</li>
+<li>
           Release notes for v1.1:
-          <ul class="mt-1">
-            <li>Added octave range controls to the virtual piano.</li>
-            <li>Fixed detection of the root note when loading multi-samples.</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-
-    <li class="mb-3">
-      <strong>Blackbox Preset Builder v1.0</strong>
-      <ul class="mt-2">
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.0/BlackboxPresetBuilder-1.0.exe">
+          <ul>
+<li>Added octave range controls to the virtual piano.</li>
+<li>Fixed detection of the root note when loading multi-samples.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Blackbox Preset Builder v1.0</strong>
+<ul>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.0/BlackboxPresetBuilder-1.0.exe">
             Windows — Signed Installer (.exe)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.0/blackbox-preset-builder_1.0-1_all.deb">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.0/blackbox-preset-builder_1.0-1_all.deb">
             Debian/Ubuntu — .deb Package (multi-arch)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.0/BlackboxPresetBuilder-1.0-universal.zip">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.0/BlackboxPresetBuilder-1.0-universal.zip">
             Universal ZIP (Windows / macOS / Linux — Java 8+)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.1/BlackboxPresetBuilder_Manual-1.0.pdf">
+</li>
+<li>
+<a href="https://github.com/Ondarium/ondarium-releases/releases/download/bbpb-1.1/BlackboxPresetBuilder_Manual-1.0.pdf">
             User Manual v1.0 — PDF
           </a>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</div>
-
-   </section>
-
+</li>
+</ul>
+</li>
+</ul></div>
+        </details>
+      </section>
+      <section class="dl-product" id="frametron">
+        <div class="dl-head">
+          <h2>Frametron</h2>
+          <span class="version">Latest · v1.0</span>
+        </div>
+        <div class="dl-grid">
+          <a class="dl-card" href="https://github.com/Ondarium/ondarium-releases/releases/download/frametron-1.0/Frametron-1.0.0-win-setup.exe">
+            <span class="dl-os"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10.5 4.5v7H3zM11.5 4.4 21 3v8.5h-9.5zM3 12.5h7.5v7L3 18.5zM11.5 12.5H21V21l-9.5-1.4z"/></svg>Windows</span>
+            <span class="dl-meta">Signed installer · VST3 · v1.0</span>
+          </a>
+          <a class="dl-card" href="https://github.com/Ondarium/ondarium-releases/releases/download/frametron-1.0/Frametron-1.0.0-macos-arm64.pkg">
+            <span class="dl-os"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4.5" width="16" height="11" rx="1.6"/><path d="M2.5 19.5h19"/></svg>macOS — Apple Silicon</span>
+            <span class="dl-meta">Signed &amp; notarized · VST3, AU · v1.0</span>
+          </a>
+          <a class="dl-card" href="https://github.com/Ondarium/ondarium-releases/releases/download/frametron-1.0/Frametron_Manual-1.0.pdf">
+            <span class="dl-os"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>User Manual</span>
+            <span class="dl-meta">PDF · v1.0</span>
+          </a>
+        </div>
+        <div class="note"><p>Frametron runs in demo mode until activated with a license key: everything works, and the video export carries a watermark.</p><p>The macOS package lets you choose the VST3 plugin, the Audio Unit, or both.</p></div>
+      </section>
+    </div>
+  </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer text-center py-4">
+  <footer class="footer">
     <div class="container">
-      <div>© <span id="y"></span> Ondarium</div>
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="/" aria-label="Ondarium — home"><img src="/images/ondarium-logo-white.svg" alt="Ondarium" width="88" height="24"></a>
+          <p>Audio tools for creators.</p>
+        </div>
+        <div>
+          <h4>Software</h4>
+          <ul>
+            <li><a href="/bentoprojectstudio.html">Bento Project Studio</a></li>
+            <li><a href="/bbpresetbuilder.html">Blackbox Preset Builder</a></li>
+            <li><a href="/frametron.html">Frametron</a></li>
+            <li><a href="/downloads.html">Downloads</a></li>
+            <li><a href="https://store.ondarium.com">Store</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="/support.html">Support</a></li>
+            <li><a href="https://forum.ondarium.com">Forum</a></li>
+            <li><a href="mailto:support@ondarium.com">support@ondarium.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">© <span id="y">2026</span> Ondarium. All rights reserved.</div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-  <script>
-    const nav = document.getElementById('mainNav');
-    function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 10); }
-    document.addEventListener('scroll', onScroll); onScroll();
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
- 
-  <!-- Download tracking -->
-  <script>
-    document.addEventListener('click', function (e) {
-      var link = e.target.closest('a');
-      if (!link) return;
-
-      var url = link.getAttribute('href');
-      if (!url) return;
-
-      if (url.match(/\.(exe|msi|zip|deb|dmg|pdf)$/i)) {
-        if (typeof gtag === 'function') {
-          gtag('event', 'download_file', {
-            file_url: url,
-            file_name: url.split('/').pop(),
-            file_extension: url.split('.').pop().toLowerCase(),
-            page_title: document.title,
-            page_location: window.location.href
-          });
-        }
-      }
-    });
- </script>
-
+  <script src="/js/site.js"></script>
 </body>
 </html>

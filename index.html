@@ -1,208 +1,139 @@
 <!doctype html>
 <html lang="en">
 <head>
-  
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QVJT9XZ2C"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-0QVJT9XZ2C');
   </script>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ondarium — Audio Software & Plugins</title>
-  <meta name="description" content="Ondarium — spectral tools for audio creators." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ondarium — Audio Software &amp; Plugins</title>
+  <meta name="description" content="Ondarium builds desktop software for audio creators: visual editors for 1010music Bento and Blackbox, with sample editing, sequencing, sound generation and DAW export.">
+  <meta name="theme-color" content="#0b0e14">
+  <link rel="canonical" href="https://www.ondarium.com/">
 
-  <!-- Bootstrap 4 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ondarium">
+  <meta property="og:title" content="Ondarium — Audio Software &amp; Plugins">
+  <meta property="og:description" content="Ondarium builds desktop software for audio creators: visual editors for 1010music Bento and Blackbox, with sample editing, sequencing, sound generation and DAW export.">
+  <meta property="og:url" content="https://www.ondarium.com/">
+  <meta property="og:image" content="https://www.ondarium.com/images/Bento_Project_Studio_screenshot.png">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Webfont Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css">
 
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="/css/custom.css">
-
-  <!-- Favicons -->
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="icon" href="/images/favicon.ico">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" sizes="180x180">
 </head>
 <body>
-  <!-- NAV -->
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header id="mainNav" class="nav">
     <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand on-dark" href="/#top">
-        <img class="logo-svg" src="/images/ondarium-mark.svg" alt="Ondarium">
-      </a>
-
-      <!-- Burger -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu"
-        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Menu items -->
-      <div id="navMenu" class="collapse navbar-collapse justify-content-end text-right">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="/products.html">Products</a></li>
-	  <li class="nav-item"><a class="nav-link" href="https://store.ondarium.com">Buy</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://forum.ondarium.com">Forum</a></li>
-          <li class="nav-item"><a class="nav-link" href="/downloads.html">Downloads</a></li>
-          <li class="nav-item"><a class="nav-link" href="/support.html">Support</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <header id="top" class="page-header">
-    <div class="page-header-image"></div>
-    <div class="container hero">
-      <div class="row align-items-center">
-        <div class="col-lg-5 text-center mb-4 mb-lg-0">
-          <!-- Light logo for dark hero -->
-          <!--
-          <img class="logo-xl on-dark" src="/images/ondarium-mark.svg" alt="Ondarium"> -->
-        </div>
-        <div class="col-lg-7 text-center text-lg-left">
-          <h1 class="title">Ondarium</h1>
-          <p class="subtitle mb-4">Audio tools for creators</p>
-          <a href="https://store.ondarium.com" class="btn btn-gradient">Check out our store</a>
-        </div>
-      </div>
-
-      <!-- Socials -->
-      <div class="social-icon text-center mt-5">
-        <ul class="list-inline mb-0">
-          <!--
-          <li class="list-inline-item"><a href="https://x.com/ondarium"><i class="fab fa-x-twitter"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="fab fa-discord"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>  
-          <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
-          -->
-        </ul>
-      </div>
-
-      <!-- Subscribe form -->
-      <!-- 
-      <form class="row subscribe-form mt-4" method="post" action="#">
-        <div class="col-md-7 mb-2 mb-md-0"><input type="email" class="subscribe-email" name="email" placeholder="Join the mailing list" required></div>
-        <div class="col-md-5"><button class="btn btn-gradient btn-subscribe" type="submit">Subscribe</button></div>
-      </form>
-      -->
+      <a class="brand" href="/" aria-label="Ondarium — home"><img src="/images/ondarium-logo-white.svg" alt="Ondarium" width="96" height="26"></a>
+      <button id="navToggle" class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+      <nav aria-label="Main">
+      <ul id="navLinks" class="nav-links">
+        <li><a href="/products.html">Products</a></li>
+        <li><a href="https://forum.ondarium.com">Forum</a></li>
+        <li><a href="/downloads.html">Downloads</a></li>
+        <li><a href="/support.html">Support</a></li>
+        <li><a class="nav-cta" href="https://store.ondarium.com">Buy</a></li>
+      </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- HOOK SECTION 1 -->
-  <section class="hook bg1" id="features">
-    <svg class="hook-top" viewBox="0 0 15 10" preserveAspectRatio="none"><path fill="#655a9d" d="M0 10 V5 Q2.5 2.5 5 5 t5 0 t5 0 V10"/></svg>
-    <svg class="hook-top" viewBox="5 0 15 10" preserveAspectRatio="none"><path fill="#a8f" d="M0 10 V5 Q2.5 2.5 5 5 t5 0 t5 0 t5 0 t5 0 V10"/></svg>
-    <div class="container hook-content">
-      <div class="row">
-        <div class="section-header text-light col-12">Bento Project Studio</div>
-        <div class="section-break bgcolor1 col-lg-5"></div>
-      </div>
-      <div class="row align-items-center mt-3">
-        <div class="col-lg-6 mb-3 mb-lg-0">
-          <div class="video-background">
-            <!--
-            <video id="video" autoplay loop muted playsinline src="/videos/feature1.mp4"></video>-->
-           
-            <img src="/images/Bento_Project_Studio_screenshot.png" alt="Bento Project Studio screenshot" class="img-fluid rounded">
-          </div>
-        </div>
-        <div class="col-lg-6">
-          Build, edit and organize your 1010music Bento projects from a visual desktop workspace. Manage Track Slots, load patches and samples, edit the Zone Map, refine audio, build sequences, create sounds with the Sound Generator, and export your ideas for DAWs or software samplers.<p/><p/>
-          <a href="bentoprojectstudio.html" class="btn btn-outline-light">More</a>
-        </div>
-        <div class="col-lg-6">
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section class="hook bg4" id="features">
-    <svg class="hook-top" viewBox="0 0 15 10" preserveAspectRatio="none"><path fill="#655a9d" d="M0 10 V5 Q2.5 2.5 5 5 t5 0 t5 0 V10"/></svg>
-    <svg class="hook-top" viewBox="5 0 15 10" preserveAspectRatio="none"><path fill="#a8f" d="M0 10 V5 Q2.5 2.5 5 5 t5 0 t5 0 t5 0 t5 0 V10"/></svg>
-    <div class="container hook-content">
-      <div class="row">
-        <div class="section-header text-light col-12">Blackbox Preset Builder</div>
-        <div class="section-break bgcolor1 col-lg-5"></div>
-      </div>
-      <div class="row align-items-center mt-3">
-        <div class="col-lg-6 mb-3 mb-lg-0">
-          <div class="video-background">
-            <!--
-            <video id="video" autoplay loop muted playsinline src="/videos/feature1.mp4"></video>-->
-           
-            <img src="/images/BB_Preset_Editor_screenshot.png" alt="Blackbox Preset Builder screenshot" class="img-fluid rounded">
-          </div>
-        </div>
-        <div class="col-lg-6">
-          Your Blackbox presets, ready in just a few clicks. Drag & drop your WAVs, adjust start/end/loop, gain, pan, pitch and pad modes, then save the preset.xml. Instant waveform view, auto-preview, pad copy/move, and keyboard/MIDI playback — everything to go from idea to preset in minutes.<p/><p/>
-          <a href="bbpresetbuilder.html" class="btn btn-outline-light">More</a>
-        </div>
-        <div class="col-lg-6">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOOK SECTION 2 (dark alt) -->
-  <!--
-  <section class="hook bg2">
-    <svg class="hook-top" viewBox="0 0 15 10" preserveAspectRatio="none"><path fill="#3e4245" d="M0 10 V5 Q2.5 2.5 5 5 t5 0 t5 0 V10"/></svg>
-    <svg class="hook-top" viewBox="5 0 15 10" preserveAspectRatio="none"><path fill="#262a2d" d="M0 10 V5 Q2.5 2.5 5 5 t5 0 t5 0 t5 0 t5 0 V10"/></svg>
-    <div class="container hook-content">
-      <div class="row">
-        <div class="section-header color1 col-12">More to come</div>
-        <div class="section-break bgcolor1 col-lg-5"></div>
-      </div>
-      
-      <div class="row align-items-center mt-3">
-        <div class="col-lg-6 mb-3 mb-lg-0">
-          <div class="video-background"><video autoplay loop muted playsinline src="/videos/feature2.mp4"></video></div>
-        </div>
-        <div class="col-lg-6 text-light">
-          Stay tuned.
-        </div>
-      </div>
-      
-    </div>
-  </section>
-  -->
-
-  <!-- FOOTER -->
-  <footer class="footer" id="contact">
+  <main id="main">
+  <section class="hero hero-intro">
     <div class="container">
-    <!--
-      <div class="row policy-links">
-        <div class="col-12 col-md-4 mb-2"><a href="#">Refund Policy</a></div>
-        <div class="col-12 col-md-4 mb-2"><a href="#">EULA</a></div>
-        <div class="col-12 col-md-4 mb-2"><a href="#">Privacy</a></div>
+      <h1 class="intro">Ondarium makes desktop editors for your hardware and plugins for your DAW.</h1>
+      <div class="cards cards-3">
+        <article class="product-card">
+          <a class="thumb" href="/bentoprojectstudio.html" tabindex="-1" aria-hidden="true"><img src="/images/Bento_Project_Studio_screenshot.png" alt="" width="1260" height="756" loading="lazy"></a>
+          <div class="body">
+            <div>
+              <h3><a href="/bentoprojectstudio.html" style="color:inherit">Bento Project Studio</a></h3>
+              <p class="meta">For 1010music Bento</p>
+            </div>
+            <p>Build, edit and organize your 1010music Bento projects from a visual desktop workspace. Manage Track Slots, load patches and samples, edit the Zone Map, refine audio, build sequences, create sounds with the Sound Generator, and export your ideas for DAWs or software samplers.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary btn-sm" href="/bentoprojectstudio.html">Learn more</a>
+              <a class="btn btn-ghost btn-sm" href="/downloads.html#bento-project-studio">Free trial</a>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="/bbpresetbuilder.html" tabindex="-1" aria-hidden="true"><img src="/images/BB_Preset_Editor_screenshot.png" alt="" width="1282" height="725" loading="lazy"></a>
+          <div class="body">
+            <div>
+              <h3><a href="/bbpresetbuilder.html" style="color:inherit">Blackbox Preset Builder</a></h3>
+              <p class="meta">For 1010music Blackbox</p>
+            </div>
+            <p>Your Blackbox presets, ready in just a few clicks. Drag &amp; drop your WAVs, adjust start/end/loop, gain, pan, pitch and pad modes, then save the preset.xml. Instant waveform view, auto-preview, pad copy/move, and keyboard/MIDI playback — everything to go from idea to preset in minutes.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary btn-sm" href="/bbpresetbuilder.html">Learn more</a>
+              <a class="btn btn-ghost btn-sm" href="/downloads.html#blackbox-preset-builder">Free trial</a>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="/frametron.html" tabindex="-1" aria-hidden="true"><img src="/images/frametron-ui.png" alt="" width="1197" height="756" loading="lazy"></a>
+          <div class="body">
+            <div>
+              <h3><a href="/frametron.html" style="color:inherit">Frametron</a></h3>
+              <p class="meta">VST3 and Audio Unit plugin</p>
+            </div>
+            <p>Play your videos like a sampler inside your DAW. Slice a video, trigger the slices from MIDI, shape the picture with live effects, and export the video in sync with your audio bounce.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary btn-sm" href="/frametron.html">Learn more</a>
+              <a class="btn btn-ghost btn-sm" href="/downloads.html#frametron">Free trial</a>
+            </div>
+          </div>
+        </article>
       </div>
-     -->
-      <div class="mt-4">© <span id="y"></span> Ondarium</div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="/" aria-label="Ondarium — home"><img src="/images/ondarium-logo-white.svg" alt="Ondarium" width="88" height="24"></a>
+          <p>Audio tools for creators.</p>
+        </div>
+        <div>
+          <h4>Software</h4>
+          <ul>
+            <li><a href="/bentoprojectstudio.html">Bento Project Studio</a></li>
+            <li><a href="/bbpresetbuilder.html">Blackbox Preset Builder</a></li>
+            <li><a href="/frametron.html">Frametron</a></li>
+            <li><a href="/downloads.html">Downloads</a></li>
+            <li><a href="https://store.ondarium.com">Store</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="/support.html">Support</a></li>
+            <li><a href="https://forum.ondarium.com">Forum</a></li>
+            <li><a href="mailto:support@ondarium.com">support@ondarium.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">© <span id="y">2026</span> Ondarium. All rights reserved.</div>
     </div>
   </footer>
 
-  <!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
-  <script>
-    // Navbar background on scroll
-    const nav = document.getElementById('mainNav');
-    function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 10); }
-    document.addEventListener('scroll', onScroll); onScroll();
-
-    // Current year
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script src="/js/site.js"></script>
 </body>
 </html>
