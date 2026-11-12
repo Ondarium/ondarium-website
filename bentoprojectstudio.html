@@ -12,17 +12,17 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bento Project Studio - Ondarium</title>
-  <meta name="description" content="Bento Project Studio is a visual desktop editor for 1010music Bento projects, tracks, samples, sequences, multisamples and exports.">
+  <title>Bento Project Studio 2.0 - Ondarium</title>
+  <meta name="description" content="Bento Project Studio 2.0 is a plugin for your DAW (VST3 and Audio Unit) and a standalone app to edit, play and sequence 1010music Bento projects.">
   <meta name="theme-color" content="#0b0e14">
   <link rel="canonical" href="https://www.ondarium.com/bentoprojectstudio.html">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ondarium">
-  <meta property="og:title" content="Bento Project Studio - Ondarium">
-  <meta property="og:description" content="Bento Project Studio is a visual desktop editor for 1010music Bento projects, tracks, samples, sequences, multisamples and exports.">
+  <meta property="og:title" content="Bento Project Studio 2.0 - Ondarium">
+  <meta property="og:description" content="Bento Project Studio 2.0 is a plugin for your DAW (VST3 and Audio Unit) and a standalone app to edit, play and sequence 1010music Bento projects.">
   <meta property="og:url" content="https://www.ondarium.com/bentoprojectstudio.html">
-  <meta property="og:image" content="https://www.ondarium.com/images/Bento_Project_Studio_screenshot.png">
+  <meta property="og:image" content="https://www.ondarium.com/images/bento2-main.png">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,11 +56,11 @@
   <section class="hero hero-compact">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/products.html">Products</a><span aria-hidden="true">/</span><span aria-current="page">Bento Project Studio</span></nav>
-      <h1>Bento Project Studio</h1>
-      <p class="lead">Build, edit and organize your Bento projects faster.</p>
+      <h1>Bento Project Studio 2.0</h1>
+      <p class="lead">Edit, play and sequence your Bento projects inside your DAW.</p>
       <div class="cta-row" style="margin-top:2rem">
-        <a class="btn btn-primary btn-lg" href="https://store.ondarium.com/checkout/buy/cda8d31f-d609-49bb-9a9e-be6be492ea86">Buy - €14.90</a>
-        <a class="btn btn-ghost btn-lg" href="/downloads.html#bento-project-studio">Download free trial</a>
+        <a class="btn btn-primary btn-lg" href="https://store.ondarium.com/checkout/buy/cda8d31f-d609-49bb-9a9e-be6be492ea86">Buy - €25</a>
+        <a class="btn btn-ghost btn-lg" href="/downloads.html#bento-project-studio">Download demo</a>
       </div>
       <p class="price-note">Local currency applied at checkout.</p>
     </div>
@@ -68,11 +68,33 @@
 
   <section class="section" style="padding-top:24px">
     <div class="container">
-      <div class="section-head" style="max-width:860px">
+      <div class="section-head" style="max-width:860px;margin-bottom:0">
         <h2>Overview</h2>
-        <p>Bento Project Studio is a dedicated desktop editor for the 1010music Bento. It turns project creation into a clear, visual workflow: choose an SD Card Root, create or open projects, manage tracks, assign samples and patches, edit sequences, preview your work, and save clean Bento-compatible project files.</p>
+        <p>Bento Project Studio 2.0 brings the Bento project editor into your DAW. Open a project from your SD card, edit its tracks, pads, zones and sequences, play your tracks from MIDI, and send each one to its own output in your DAW. It is a VST3 and Audio Unit plugin, and also a standalone application.</p>
       </div>
-      <div class="frame"><img src="/images/Bento_Project_Studio_screenshot.png" alt="Bento Project Studio screenshot" width="1260" height="756"></div>
+      <div class="frame" style="margin-top:48px"><img src="/images/bento2-main.png" alt="Bento Project Studio 2.0: track bar, pads, keyboard, waveform, browser and parameters" width="1527" height="953"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head" style="max-width:860px;margin-bottom:32px">
+        <h2>What's new in 2.0</h2>
+      </div>
+      <article class="feature">
+        <ul class="cols-2">
+            <li>Runs inside your DAW as a VST3 or Audio Unit plugin, and also as a standalone application.</li>
+            <li>A new, faster audio engine.</li>
+            <li>A redesigned interface that scales to the size of the window, with dark and light themes.</li>
+            <li>Follows your DAW tempo, and plays from MIDI: each track listens to its own channel.</li>
+            <li>Sends the Main mix, every track and the FX returns to separate outputs of your DAW.</li>
+            <li>Drag sequences, scenes and chords into your DAW as MIDI, and recordings and generated sounds as audio.</li>
+            <li>New Compose tools: scales, chords and Euclidean rhythms.</li>
+            <li>New Modulation: an LFO and other sources routed to the parameters of each track, audible thanks to the new audio engine.</li>
+            <li>Complete support for Granular and Wavetable tracks.</li>
+            <li>New Tuner.</li>
+        </ul>
+      </article>
     </div>
   </section>
 
@@ -83,91 +105,139 @@
       </div>
       <div class="feature-grid">
         <article class="feature">
-          <h3>Project &amp; Track Slot workflow</h3>
-          <p class="sub">Work with Bento projects using the same track-based structure as the hardware.</p>
+          <h3>Tracks, pads and samples</h3>
+          <p class="sub">Work with Bento projects the way the hardware does: eight tracks, sixteen pads per track.</p>
           <ul>
-            <li>Create new projects or open existing projects directly from your SD Card Root.</li>
-            <li>Drag samples or folders onto Track Slots and pads, with rules adapted to each track type.</li>
-            <li>Replace a track type while keeping its sequences when the target track type supports them.</li>
-            <li>Browse and load Bento patches.</li>
+            <li>Open projects from your SD card or from any folder, with a file browser built into the plugin.</li>
+            <li>Track types: One-shot, Multisample, Slicer, Loop, Granular, Wavetable and Shredder.</li>
+            <li>Drag samples and folders onto pads and tracks, and set the start and end markers on the waveform.</li>
+            <li>Level, pan, pitch, velocity, filter, resonance, overdrive, delay and reverb sends, an envelope, and every playback mode: Trigger, Gate, Toggle, loops, poly modes and exclusive groups.</li>
+            <li>Play the pads from the on-screen keyboard or from MIDI.</li>
           </ul>
-          <div class="shots"><div class="frame frame-sm"><img src="/images/bento_sd_card_browser.png" alt="Bento Project Studio Track Slots" width="398" height="151" loading="lazy"></div></div>
+          <div class="shots"><div class="frame frame-sm"><img src="/images/bento2-tracks.png" alt="Bento Project Studio track bar, pads, keyboard and waveform" width="871" height="541" loading="lazy"></div></div>
         </article>
         <article class="feature">
-          <h3>Sample &amp; Pad Editing</h3>
-          <p class="sub">Assign samples, adjust playback, and audition changes from the desktop before moving back to the hardware.</p>
+          <h3>Multisample zones</h3>
+          <p class="sub">Build playable instruments visually.</p>
           <ul>
-            <li>Clear pad overview for sample-based tracks, with names, states, and useful visual feedback.</li>
-            <li>Waveform display with Start, End, Loop Start and Loop End markers where applicable.</li>
-            <li>Edit gain, pan, pitch, playback direction, loop mode, choke, polyphony and velocity behavior.</li>
-            <li>Preview with the virtual keyboard, MIDI input, or the sequencer transport.</li>
-            <li>Use per-track level, pan, mute, solo and send controls for a more realistic project preview.</li>
-          </ul>
-          <div class="shots"><div class="frame frame-sm"><img src="/images/waveview.png" alt="Bento Project Studio sample editor" width="466" height="74" loading="lazy"></div></div>
-        </article>
-        <article class="feature">
-          <h3>Zone Map for Multisamples</h3>
-          <p class="sub">Build playable multisample instruments visually instead of editing zones by hand.</p>
-          <ul>
-            <li>Drop a folder of WAV files onto a multisample Track Slot to create zones automatically.</li>
+            <li>Drop a folder of WAV files onto a Multisample track to create the zones automatically.</li>
             <li>Read root notes from WAV metadata when available.</li>
-            <li>Detect root notes and velocity layers from filenames when metadata is missing.</li>
-            <li>Edit key ranges and velocity ranges directly in the Zone Map.</li>
-            <li>Use automatic spreading tools to organize selected zones without overwriting unrelated zones.</li>
+            <li>Edit key ranges and velocity ranges by dragging the edges of a zone, or type Root, Key Low, Key High, Vel Low and Vel High.</li>
           </ul>
-          <div class="shots"><div class="frame frame-sm"><img src="/images/zone_map_editor.png" alt="Bento Project Studio Zone Map" width="980" height="346" loading="lazy"></div></div>
+          <div class="shots"><div class="frame frame-sm"><img src="/images/bento2-zones.png" alt="Bento Project Studio zone map for a multisample track" width="872" height="394" loading="lazy"></div></div>
+        </article>
+        <article class="feature wide">
+          <h3>Sequencer and scenes</h3>
+          <p class="sub">Build sequences and scenes like on the hardware, with a piano roll.</p>
+          <ul>
+            <li>Eight sequence slots per track and up to sixteen scenes, launched in time with the grid while your DAW plays.</li>
+            <li>A Song mode plays your scenes one after another, each with its own repeat count. Loop groups launch sets of loops together.</li>
+            <li>Piano roll with velocity, probability and automation lanes, zoom, copy and paste, and scale lock.</li>
+            <li>Import MIDI files into a sequence.</li>
+            <li>Drag a sequence or a whole scene into your DAW as a MIDI file.</li>
+          </ul>
+          <div class="shots"><div class="frame frame-sm"><img src="/images/bento2-sequencer.png" alt="Bento Project Studio sequencer with scenes and piano roll" width="1526" height="413" loading="lazy"></div></div>
         </article>
         <article class="feature">
+          <h3>Compose</h3>
+          <p class="sub">Find chords and rhythms without leaving the plugin.</p>
+          <ul>
+            <li>Pick a scale, then lock new notes to it in the piano roll, or force existing notes onto the scale.</li>
+            <li>The Chorder turns one note into a chord, with chord type, inversion, voicing (Close, Open, Drop 2) and octave.</li>
+            <li>Save chords into a progression, rearrange them, and drag the whole progression out as MIDI.</li>
+            <li>Euclidean rhythms: set the note, steps, pulses and rotation of each line, and fill a sequence.</li>
+          </ul>
+          <div class="shots"><div class="frame frame-sm"><img src="/images/bento2-chords.png" alt="Bento Project Studio Compose tab with a chord progression" width="654" height="484" loading="lazy"></div></div>
+        </article>
+        <article class="feature">
+          <h3>Modulation</h3>
+          <p class="sub">Move your sounds with an LFO and other sources.</p>
+          <ul>
+            <li>An LFO with nine shapes, rate, depth, Beat Sync and Restart.</li>
+            <li>Route sources to targets such as Level, Pitch, Pan, Attack, Decay, Release and Filter Cutoff, with up to three sources per target.</li>
+            <li>Granular and Wavetable tracks have two LFOs.</li>
+            <li>Modulation is audible, thanks to the new audio engine.</li>
+          </ul>
+          <div class="shots"><div class="frame frame-sm"><img src="/images/bento2-modulation.png" alt="Bento Project Studio Modulation tab with LFO and targets" width="652" height="478" loading="lazy"></div></div>
+        </article>
+        <article class="feature wide">
+          <h3>Mixer, FX and outputs</h3>
+          <p class="sub">A mixer inside the plugin, and separate outputs to your DAW.</p>
+          <ul>
+            <li>Eight track strips, FX returns and Main, with fader, pan, mute, solo and meters.</li>
+            <li>Send the Main mix, each of the eight tracks and the FX returns to separate stereo outputs of your DAW.</li>
+            <li>Delay and reverb as send effects, each with its own settings.</li>
+            <li>DJ FX: two XY pads with Repeater, Gater, Filter, Bitcrusher, Echo, Flanger and more, with Hold.</li>
+            <li>The Main level, the mixer and the DJ FX can be automated by your DAW.</li>
+          </ul>
+          <div class="shots"><div class="frame frame-sm"><img src="/images/bento2-mixer.png" alt="Bento Project Studio mixer with eight track strips, FX returns and Main" width="1524" height="374" loading="lazy"></div><div class="frame frame-sm" style="max-width:820px"><img src="/images/bento2-djfx.png" alt="Bento Project Studio DJ FX with two XY pads" width="820" height="363" loading="lazy"></div></div>
+        </article>
+        <article class="feature">
+          <h3>Recorder</h3>
+          <p class="sub">Capture your performance as audio.</p>
+          <ul>
+            <li>Record the Main mix with or without FX, or stems: one file per track, plus FX and Main.</li>
+            <li>Start recording with the sequencer, and stop manually or after a fixed number of bars.</li>
+            <li>Drag one stem, or all stems at once, straight into your DAW tracks.</li>
+          </ul>
+          <div class="shots"><div class="frame frame-sm"><img src="/images/bento2-recorder.png" alt="Bento Project Studio Recorder with eight recorded stems" width="650" height="443" loading="lazy"></div></div>
+        </article>
+        <article class="feature">
+          <h3>Tuner</h3>
+          <p class="sub">Check the pitch of a sample or of your mix.</p>
+          <ul>
+            <li>Live mode listens to Main or to the selected track. Sample mode reads the sample of the selected pad.</li>
+            <li>Shows the note, cents, frequency and clarity, with a spectrum by semitone.</li>
+            <li>Hold, A4 reference and a gate level.</li>
+          </ul>
+          <div class="shots"><div class="frame frame-sm"><img src="/images/bento2-tuner.png" alt="Bento Project Studio Tuner showing a note and a spectrum" width="654" height="489" loading="lazy"></div></div>
+        </article>
+        <article class="feature wide">
           <h3>Audio Editor</h3>
-          <p class="sub">Refine samples without leaving the project editor, using a reversible workflow built for quick sound preparation.</p>
+          <p class="sub">Prepare samples without leaving the project.</p>
           <ul>
-            <li>Apply common processes such as Normalize, Trim, Silence, Fade In / Fade Out, Gain, Reverse and DC Offset Removal.</li>
-            <li>Use Loop Finder and loop crossfade editing to create smoother loop points.</li>
-            <li>Normalize slices when preparing Slicer material.</li>
-            <li>Undo and redo edits while preparing samples for the final project.</li>
+            <li>Normalize, Silence, Fade In and Out, Gain, Compressor, Transient Shaper, Distortion, Bit Crush, Chorus, Flanger, Phaser, Pitch / Time and more.</li>
+            <li>Loop Finder to find smoother loop points.</li>
+            <li>Zoom, snap to markers and zero crossings, play or loop a selection, with Undo and Redo.</li>
+            <li>Save WAV, Export and Trim WAV.</li>
           </ul>
-          <div class="shots"><div class="frame frame-sm"><img src="/images/audio_editor.png" alt="Bento Project Studio Audio Editor" width="711" height="258" loading="lazy"></div></div>
+          <div class="shots"><div class="frame frame-sm"><img src="/images/bento2-editor.png" alt="Bento Project Studio Audio Editor with the list of processes" width="1530" height="374" loading="lazy"></div></div>
         </article>
-        <article class="feature">
-          <h3>Sequencer</h3>
-          <p class="sub">Build and edit Bento sequences directly from a clear, track-based sequencer view.</p>
-          <ul>
-            <li>Manage up to eight sequences per track, with clear ARM and active-sequence controls.</li>
-            <li>Edit notes with copy / paste, duplicate, selection, transposition, undo / redo and note preview.</li>
-            <li>Record ideas with live MIDI recording or import MIDI files into the sequencer.</li>
-          </ul>
-          <div class="shots"><div class="frame frame-sm"><img src="/images/bento_sequencer_sequence_grid.png" alt="Bento Project Studio Sequencer sequence grid" width="546" height="360" loading="lazy"></div><div class="frame frame-sm"><img src="/images/bento_sequencer_note_editor.png" alt="Bento Project Studio note editor" width="579" height="368" loading="lazy"></div></div>
-        </article>
-        <article class="feature">
+        <article class="feature wide">
           <h3>Sound Generator</h3>
-          <p class="sub">Create new audio material directly inside the editor and turn it into usable Bento content in seconds.</p>
+          <p class="sub">Create new sounds and use them right away.</p>
           <ul>
-            <li>Generate drums, textures, FX, tonal sounds and variations without leaving the project.</li>
-            <li>Adjust a parameter or click Randomize to explore new results quickly.</li>
-            <li>Drag the generated sound onto a pad or Track Slot for immediate use.</li>
-            <li>Use it for fast kit building, sound design sessions, transitions and placeholders.</li>
-            <li>Keep generated material inside the project workflow so files remain easy to manage.</li>
+            <li>Seventeen generators: kick, snare, hat, clap, VA subtractive, physical, glitch, noise, super pad, wavetable, phase, organ, FX, FM, modal, vocal and bass.</li>
+            <li>Randomize to explore new results quickly.</li>
+            <li>Set the root note and a chord, then drag the sound onto a pad, a track, or into your DAW.</li>
           </ul>
-          <div class="shots"><div class="frame frame-sm"><img src="/images/bento_sound_generator.png" alt="Bento Project Studio Sound Generator" width="573" height="271" loading="lazy"></div></div>
+          <div class="shots"><div class="frame frame-sm"><img src="/images/bento2-generator.png" alt="Bento Project Studio Sound Generator with its parameters" width="1518" height="370" loading="lazy"></div></div>
         </article>
         <article class="feature">
-          <h3>Export &amp; Sharing</h3>
-          <p class="sub">Move ideas between Bento, your DAW and software samplers without rebuilding everything manually.</p>
+          <h3>Built for your DAW</h3>
+          <p class="sub">It behaves like a plugin, not like a window you have to leave.</p>
           <ul>
-            <li>Export sequences as standard MIDI files for editing or arranging in a DAW.</li>
-            <li>Export pads and multisamples as SFZ instruments for compatible software samplers.</li>
-            <li>Export DAWproject files for compatible DAWs, including Bitwig, Cubase and Studio One workflows.</li>
-            <li>Keep sample paths portable when working inside the selected SD Card Root.</li>
+            <li>Follows your DAW tempo, with Host Sync and Restart on Play.</li>
+            <li>Each track listens to its own MIDI channel, or the selected track plays everything. Your project is saved with your DAW session.</li>
+            <li>A scalable interface in four themes: Dark, Dark Soft, Light and Light Slate.</li>
           </ul>
-          <div class="shots"><div class="frame frame-sm"><img src="/images/bento_export.png" alt="Bento Project Studio export" width="387" height="226" loading="lazy"></div></div>
+        </article>
+        <article class="feature">
+          <h3>Try it first</h3>
+          <p class="sub">The demo runs until you activate it with a license key.</p>
+          <ul>
+            <li>The first two tracks play. Tracks 3 to 8 are disabled.</li>
+            <li>Saving a project with more than two tracks, and writing WAV files, are disabled.</li>
+            <li>Everything else works. Activating a license unlocks all eight tracks at once.</li>
+          </ul>
         </article>
       </div>
       <div class="platforms" style="margin-top:32px">
         <div>
-          <strong>Supported operating systems</strong>
-          <span>Any platform with a Java 8+ runtime · 64-bit</span>
+          <strong>Formats and systems</strong>
+          <span>VST3 and a standalone application on Windows 10 and 11 (Intel) and on macOS 11 and later (Apple silicon and Intel), and an Audio Unit on macOS.</span>
         </div>
-        <div class="chips"><span class="chip">Windows</span><span class="chip">macOS</span><span class="chip">Linux (Debian/Ubuntu)</span></div>
+        <div class="chips"><span class="chip">VST3</span><span class="chip">Audio Unit</span><span class="chip">Standalone</span><span class="chip">Windows</span><span class="chip">macOS</span></div>
       </div>
     </div>
   </section>
